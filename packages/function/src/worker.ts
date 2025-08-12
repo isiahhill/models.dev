@@ -41,6 +41,18 @@ export default {
       url.pathname === "/index"
     ) {
       url.pathname = "/_index";
+    } else if (url.pathname.startsWith("/logos/")) {
+      // Check if the specific provider logo exists in static assets
+      const logoResponse = await env.ASSETS.fetch(new Request(url.toString(), request));
+
+      if (logoResponse.status === 404) {
+        // Fallback to default logo
+        const defaultUrl = new URL(url);
+        defaultUrl.pathname = "/logos/default.svg";
+        return await env.ASSETS.fetch(new Request(defaultUrl.toString(), request));
+      }
+
+      return logoResponse;
     } else {
       // redirect to "/"
       return new Response(null, {

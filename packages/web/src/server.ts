@@ -12,6 +12,24 @@ Bun.serve({
       );
       return new Response(file);
     },
+    "/logos/*": async (req) => {
+      const url = new URL(req.url);
+      const provider = url.pathname.split('/')[2].replace('.svg', '');
+      const logoPath = path.join(import.meta.dir, "..", "..", "..", "providers", provider, "logo.svg");
+      const defaultLogoPath = path.join(import.meta.dir, "..", "..", "..", "providers", "logo.svg");
+
+      let file = Bun.file(logoPath);
+      if (!await file.exists()) {
+        file = Bun.file(defaultLogoPath);
+      }
+
+      return new Response(file, {
+        headers: {
+          "Content-Type": "image/svg+xml",
+          "Cache-Control": "public, max-age=3600"
+        }
+      });
+    },
   },
 });
 
