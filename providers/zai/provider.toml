@@ -1,4 +1,4 @@
-name = "Zhipu AI"
+name = "Z.AI"
 env = ["ZHIPU_API_KEY"]
 npm = "@ai-sdk/openai-compatible"
 doc = "https://docs.z.ai/guides/overview/pricing"
