@@ -5,12 +5,11 @@ attachment = false
 reasoning = true
 temperature = true
 tool_call = true
-knowledge = "2025-04"
 open_weights = true
 
 [cost]
-input = 0.5
-output = 1.0
+input = 0.20
+output = 0.80
 
 [limit]
 context = 131_072
