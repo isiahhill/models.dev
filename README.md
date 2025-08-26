@@ -135,7 +135,7 @@ Models must conform to the following schema, as defined in `app/schemas.ts`.
 - `npm`: String - AI SDK Package name
 - `env`: String[] - Environment variable keys used for auth
 - `doc`: String - Link to the provider's documentation
-- `api` _(optional)_: String - Required only when using `@ai-sdk/openai-compatible` as the npm package
+- `api` _(optional)_: String - OpenAI-compatible API endpoint. Required when using `@ai-sdk/openai-compatible` as the npm package.
 
 **Model Schema:**
 

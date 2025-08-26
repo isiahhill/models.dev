@@ -68,12 +68,11 @@ export const Provider = z
     (data) => {
       return (
         (data.npm === "@ai-sdk/openai-compatible" && data.api !== undefined) ||
-        (data.npm !== "@ai-sdk/openai-compatible" && data.api === undefined)
+        data.npm !== "@ai-sdk/openai-compatible"
       );
     },
     {
-      message:
-        "'api' field is required if and only if npm is '@ai-sdk/openai-compatible'",
+      message: "'api' field is required if npm is '@ai-sdk/openai-compatible'",
       path: ["api"],
     }
   );
