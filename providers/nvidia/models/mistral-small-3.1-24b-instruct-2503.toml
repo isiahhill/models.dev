@@ -1,0 +1,21 @@
+name = "Mistral-Small-3.1-24B-Instruct-2503"
+release_date = "2025-04-01"
+last_updated = "2025-09-05"
+attachment = true
+reasoning = true
+temperature = true
+knowledge = "2023-10"
+tool_call = true
+open_weights = true
+
+[cost]
+input = 0.0
+output = 0.0
+
+[limit]
+context = 128_000
+output = 8_192
+
+[modalities]
+input = ["text", "image"]
+output = ["text"]
