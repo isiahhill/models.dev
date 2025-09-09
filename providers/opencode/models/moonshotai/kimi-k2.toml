@@ -1,12 +1,17 @@
-name = "moonshotai/Kimi-K2-Instruct-0905"
+name = "Kimi K2"
 release_date = "2025-09-05"
 last_updated = "2025-09-05"
 attachment = false
 reasoning = false
 temperature = true
-knowledge = "2025-08"
 tool_call = true
+knowledge = "2024-10"
 open_weights = true
+experimental = true
+
+[cost]
+input = 0.6
+output = 2.5
 
 [limit]
 context = 262_144
@@ -15,7 +20,3 @@ output = 262_144
 [modalities]
 input = ["text"]
 output = ["text"]
-
-[cost]
-input = 0.60
-output = 2.50
