@@ -12,7 +12,6 @@ open_weights = false
 input = 2.00
 output = 5.00
 
-
 [limit]
 context = 250_000
 output = 60_000
