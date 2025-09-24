@@ -50,7 +50,8 @@ export const Model = z
     experimental: z.boolean().optional(),
     provider: z
       .object({
-        npm: z.string().min(1, "Provider npm module override cannot be empty"),
+        npm: z.string().optional(),
+        api: z.string().optional(),
       })
       .optional(),
   })
