@@ -10,8 +10,8 @@ open_weights = false
 
 
 [cost]
-input = 1.91
-output = 7.64
+input = 2.354
+output = 9.417
 
 [limit]
 context = 1_047_576
