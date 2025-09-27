@@ -1,4 +1,4 @@
-name = "Code Supernova"
+name = "Code Supernova 1M"
 release_date = "2025-09-19"
 last_updated = "2025-09-19"
 attachment = true
@@ -14,8 +14,8 @@ cache_read = 0.0
 cache_write = 0.0
 
 [limit]
-context = 200_000
-output = 200_000
+context = 1_000_000
+output = 1_000_000
 
 [modalities]
 input = ["text", "image"]
