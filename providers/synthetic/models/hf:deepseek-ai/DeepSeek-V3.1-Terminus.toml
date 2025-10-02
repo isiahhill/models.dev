@@ -1,6 +1,6 @@
-name = "DeepSeek V3.1"
-release_date = "2025-08-21"
-last_updated = "2025-08-21"
+name = "DeepSeek V3.1 Terminus"
+release_date = "2025-09-22"
+last_updated = "2025-09-25"
 attachment = false
 reasoning = true
 temperature = true
@@ -8,8 +8,8 @@ tool_call = true
 open_weights = false
 
 [cost]
-input = 0.56
-output = 1.68
+input = 1.20
+output = 1.20
 
 [limit]
 context = 128_000

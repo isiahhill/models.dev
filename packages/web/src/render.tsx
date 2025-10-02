@@ -287,6 +287,26 @@ export const Rendered = renderToString(
             </div>
           </th>
           <th class="sortable" data-type="number">
+            <div class="header-container">
+              <span class="header-text">
+                Audio Input Cost
+                <br />
+                <span class="desc">per 1M tokens</span>
+              </span>
+              <span class="sort-indicator"></span>
+            </div>
+          </th>
+          <th class="sortable" data-type="number">
+            <div class="header-container">
+              <span class="header-text">
+                Audio Output Cost
+                <br />
+                <span class="desc">per 1M tokens</span>
+              </span>
+              <span class="sort-indicator"></span>
+            </div>
+          </th>
+          <th class="sortable" data-type="number">
             Context Limit <span class="sort-indicator"></span>
           </th>
           <th class="sortable" data-type="number">
@@ -398,6 +418,8 @@ export const Rendered = renderToString(
                   <td>{renderCost(model.cost?.reasoning)}</td>
                   <td>{renderCost(model.cost?.cache_read)}</td>
                   <td>{renderCost(model.cost?.cache_write)}</td>
+                  <td>{renderCost(model.cost?.input_audio)}</td>
+                  <td>{renderCost(model.cost?.output_audio)}</td>
                   <td>{model.limit.context.toLocaleString()}</td>
                   <td>{model.limit.output.toLocaleString()}</td>
                   <td>{model.temperature ? "Yes" : "No"}</td>

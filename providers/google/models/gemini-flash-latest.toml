@@ -1,6 +1,6 @@
-name = "Gemini 2.5 Flash Lite Preview 06-17"
-release_date = "2025-06-17"
-last_updated = "2025-06-17"
+name = "Gemini Flash Latest"
+release_date = "2025-09-25"
+last_updated = "2025-09-25"
 attachment = true
 reasoning = true
 temperature = true
@@ -9,10 +9,9 @@ tool_call = true
 open_weights = false
 
 [cost]
-input = 0.10
-output = 0.40
-cache_read = 0.025
-input_audio = 0.30
+input = 0.15
+output = 0.60
+cache_read = 0.0375
 
 [limit]
 context = 1_048_576

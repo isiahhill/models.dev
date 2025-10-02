@@ -1,21 +1,21 @@
-name = "Kimi K2"
+name = "Qwen3 Max"
 release_date = "2025-09-05"
 last_updated = "2025-09-05"
 attachment = false
-reasoning = false
+reasoning = true
 temperature = true
+knowledge = "2025-04"
 tool_call = true
-knowledge = "2024-10"
 open_weights = true
+experimental = true
 
 [cost]
-input = 0.6
-output = 2.5
-cache_read = 0.36
+input = 1.6
+output = 6.4
 
 [limit]
 context = 262_144
-output = 262_144
+output = 65_536
 
 [modalities]
 input = ["text"]

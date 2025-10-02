@@ -102,6 +102,8 @@ output = 15.00              # Cost per million output tokens (USD)
 reasoning = 15.00           # Cost per million reasoning tokens (USD)
 cache_read = 0.30           # Cost per million cached read tokens (USD)
 cache_write = 3.75          # Cost per million cached write tokens (USD)
+input_audio = 1.00          # Cost per million audio input tokens (USD)
+output_audio = 10.00        # Cost per million audio output tokens (USD)
 
 [limit]
 context = 200_000           # Maximum context window (tokens)
@@ -155,6 +157,8 @@ Models must conform to the following schema, as defined in `app/schemas.ts`.
 - `cost.reasoning` _(optional)_: Number — Cost per million reasoning tokens (USD)
 - `cost.cache_read` _(optional)_: Number — Cost per million cached read tokens (USD)
 - `cost.cache_write` _(optional)_: Number — Cost per million cached write tokens (USD)
+- `cost.input_audio` _(optional)_: Number — Cost per million audio input tokens, if billed separately (USD)
+- `cost.output_audio` _(optional)_: Number — Cost per million audio output tokens, if billed separately (USD)
 - `limit.context`: Number — Maximum context window (tokens)
 - `limit.output`: Number — Maximum output tokens
 - `modalities.input`: Array of strings — Supported input modalities (e.g., ["text", "image", "audio", "video", "pdf"])
