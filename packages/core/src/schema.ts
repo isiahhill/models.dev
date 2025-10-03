@@ -56,6 +56,7 @@ export const Model = z
       output: z.number().min(0, "Output tokens must be positive"),
     }),
     experimental: z.boolean().optional(),
+    deprecated: z.boolean().optional(),
     provider: z
       .object({
         npm: z.string().optional(),
