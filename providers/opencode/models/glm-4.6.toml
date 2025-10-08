@@ -7,7 +7,6 @@ temperature = true
 tool_call = true
 knowledge = "2025-04"
 open_weights = true
-experimental = true
 beta = true
 
 [cost]
