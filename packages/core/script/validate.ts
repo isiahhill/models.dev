@@ -6,7 +6,7 @@ import { ZodError } from "zod";
 
 try {
   const result = await generate(
-    path.join(import.meta.dirname, "..", "..", "..", "providers")
+    path.join(import.meta.dirname, "..", "..", "..", "providers"),
   );
   console.log(JSON.stringify(result, null, 2));
 } catch (e: any) {
