@@ -1,0 +1,5 @@
+name = "Nebius AI Studio"
+env = ["NEBIUS_API_KEY"]
+npm = "@ai-sdk/openai-compatible"
+api = "https://api.studio.nebius.com/v1/"
+doc = "https://docs.studio.nebius.com/quickstart"

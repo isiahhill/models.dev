@@ -1,0 +1,21 @@
+name = "Hermes-4 405B"
+release_date = "2024-08-01"
+last_updated = "2025-10-04"
+attachment = false
+reasoning = true
+temperature = true
+knowledge = "2024-07"
+tool_call = true
+open_weights = false
+
+[cost]
+input = 1.00
+output = 3.00
+
+[limit]
+context = 131072
+output = 8192
+
+[modalities]
+input = ["text"]
+output = ["text"]
