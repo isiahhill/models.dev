@@ -1,21 +1,20 @@
-name = "Qwen3 Max"
-release_date = "2025-09-05"
-last_updated = "2025-09-05"
+name = "Qwen3 Next 80B A3B Thinking"
+release_date = "2025-09-11"
+last_updated = "2025-09-11"
 attachment = false
 reasoning = true
 temperature = true
 knowledge = "2025-04"
 tool_call = true
 open_weights = true
-experimental = true
 
 [cost]
-input = 1.6
-output = 6.4
+input = 0.14
+output = 1.40
 
 [limit]
 context = 262_144
-output = 65_536
+output = 262_144
 
 [modalities]
 input = ["text"]

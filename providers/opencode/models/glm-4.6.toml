@@ -1,4 +1,4 @@
-name = "GLM-4.6"
+name = "GLM-4.6 (beta)"
 release_date = "2025-09-30"
 last_updated = "2025-09-30"
 attachment = false
@@ -7,13 +7,11 @@ temperature = true
 tool_call = true
 knowledge = "2025-04"
 open_weights = true
-experimental = true
+beta = true
 
 [cost]
 input = 0.6
-output = 2.2
-cache_read = 0.11
-cache_write = 0
+output = 1.9
 
 [limit]
 context = 204800

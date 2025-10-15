@@ -1,0 +1,22 @@
+name = "Code G8X (alpha)"
+release_date = "2025-07-30"
+last_updated = "2025-07-30"
+attachment = false
+reasoning = true
+temperature = true
+tool_call = true
+knowledge = "2025-01"
+open_weights = true
+alpha = true
+
+[cost]
+input = 0.5
+output = 2.0
+
+[limit]
+context = 200000
+output = 128000
+
+[modalities]
+input = ["text"]
+output = ["text"]

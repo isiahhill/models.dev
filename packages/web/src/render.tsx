@@ -15,7 +15,9 @@ export const Providers = await generate(
 const loadProviderSvg = async (providerId: string): Promise<string | null> => {
   const providerLogoPath = path.join(
     import.meta.dir,
-    "..", "..", "..",
+    "..",
+    "..",
+    "..",
     "providers",
     providerId,
     "logo.svg"
@@ -23,7 +25,9 @@ const loadProviderSvg = async (providerId: string): Promise<string | null> => {
 
   const defaultLogoPath = path.join(
     import.meta.dir,
-    "..", "..", "..",
+    "..",
+    "..",
+    "..",
     "providers",
     "logo.svg"
   );
@@ -336,7 +340,7 @@ export const Rendered = renderToString(
           )
           .flatMap(([providerId, provider]) =>
             Object.entries(provider.models)
-              .filter(([, model]) => !model.experimental)
+              .filter(([, model]) => !model.alpha)
               .sort(([, modelA], [, modelB]) =>
                 modelA.name.localeCompare(modelB.name)
               )
@@ -498,10 +502,16 @@ export const Rendered = renderToString(
           .
         </p>
         <h2>Logos</h2>
-        <p>Provider logos are available at <code>/logos/{`{provider}`}.svg</code> where <code>{`{provider}`}</code> is the <b>Provider ID</b>.</p>
+        <p>
+          Provider logos are available at <code>/logos/{`{provider}`}.svg</code>{" "}
+          where <code>{`{provider}`}</code> is the <b>Provider ID</b>.
+        </p>
         <div class="code-block">
           <code>
-            curl <a href="/logos/anthropic.svg">https://models.dev/logos/anthropic.svg</a>
+            curl{" "}
+            <a href="/logos/anthropic.svg">
+              https://models.dev/logos/anthropic.svg
+            </a>
           </code>
         </div>
         <p>

@@ -7,7 +7,6 @@ temperature = false
 knowledge = "2025-01"
 tool_call = true
 open_weights = false
-experimental = true
 
 [cost]
 input = 0.50
