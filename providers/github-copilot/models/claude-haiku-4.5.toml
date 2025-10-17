@@ -9,8 +9,8 @@ knowledge = "2025-02-31"
 open_weights = false
 
 [limit]
-context = 200_000
-output = 64_000
+context = 144_000
+output = 16_000
 
 [modalities]
 input = ["text", "image"]
