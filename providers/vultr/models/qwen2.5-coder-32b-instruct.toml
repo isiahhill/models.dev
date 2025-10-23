@@ -13,8 +13,8 @@ input = 0.20
 output = 0.20
 
 [limit]
-context = 128_000
-output = 32_768
+context = 12_952
+output = 2_048
 
 [modalities]
 input = ["text"]
