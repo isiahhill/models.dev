@@ -43,7 +43,7 @@ function getColumnIndexByUrlName(name: string): number {
 let y = 0;
 
 help.addEventListener("click", () => {
-  scrollY = window.scrollY;
+  y = window.scrollY;
   document.body.style.position = "fixed";
   document.body.style.top = `-${y}px`;
   modal.showModal();
@@ -53,7 +53,7 @@ function closeDialog() {
   modal.close();
   document.body.style.position = "";
   document.body.style.top = "";
-  window.scrollTo(0, scrollY);
+  window.scrollTo(0, y);
 }
 
 modalClose.addEventListener("click", closeDialog);
