@@ -1,11 +1,12 @@
-name = "Gemma 3 27B IT"
-release_date = "2025-03-01"
-last_updated = "2025-03-01"
+name = "Gemma-3-27B-IT"
+release_date = "2024-12-01"
+last_updated = "2025-09-05"
 attachment = true
-reasoning = false
+reasoning = true
 temperature = true
+knowledge = "2024-12"
 tool_call = true
-open_weights = true
+open_weights = false
 
 [cost]
 input = 0.25
