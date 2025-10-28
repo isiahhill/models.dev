@@ -5,6 +5,7 @@ tool_call = true
 temperature = true
 release_date = "2025-06-17"
 last_updated = "2025-06-17"
+open_weights = true
 
 [cost]
 input = 0.40
