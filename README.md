@@ -153,7 +153,7 @@ Models must conform to the following schema, as defined in `app/schemas.ts`.
 - `knowledge` _(optional)_: String — Knowledge-cutoff date in `YYYY-MM` or `YYYY-MM-DD` format
 - `release_date`: String — First public release date in `YYYY-MM` or `YYYY-MM-DD`
 - `last_updated`: String — Most recent update date in `YYYY-MM` or `YYYY-MM-DD`
-- `open_weights` _(optional)_: Boolean - Indicate the model’s trained weights are publicly available
+- `open_weights`: Boolean - Indicate the model's trained weights are publicly available
 - `cost.input` _(optional)_: Number — Cost per million input tokens (USD)
 - `cost.output` _(optional)_: Number — Cost per million output tokens (USD)
 - `cost.reasoning` _(optional)_: Number — Cost per million reasoning tokens (USD)
