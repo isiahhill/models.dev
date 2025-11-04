@@ -1,0 +1,23 @@
+name = "Code GD4 (alpha)"
+release_date = "2025-01-01"
+last_updated = "2025-01-01"
+attachment = false
+reasoning = true
+temperature = true
+tool_call = true
+knowledge = "2025-01"
+open_weights = true
+status = "alpha"
+
+[cost]
+input = 0.5
+output = 2.0
+cache_read = 0.15
+
+[limit]
+context = 200000
+output = 128000
+
+[modalities]
+input = ["text"]
+output = ["text"]
