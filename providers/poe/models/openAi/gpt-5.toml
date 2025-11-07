@@ -1,4 +1,4 @@
-name = "GPT 5"
+name = "GPT-5"
 release_date = "2025-08-05"
 last_updated = "2025-08-05"
 attachment = true
@@ -8,8 +8,8 @@ open_weights = false
 tool_call = true
 
 [cost]
-input = 2.10
-output = 19
+input = 1.1
+output = 9
 cache_read = 0.11
 
 [limit]

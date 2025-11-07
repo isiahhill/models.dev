@@ -9,9 +9,9 @@ tool_call = true
 
 [cost]
 input = 0.85
-output = 4.20
-cache_read = 0.08
-cache_write = 1.10
+output = 4.2
+cache_read = 0.085
+cache_write = 1.1
 
 [limit]
 context = 196_608

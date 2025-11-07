@@ -1,4 +1,4 @@
-name = "O3"
+name = "o3"
 release_date = "2025-04-16"
 last_updated = "2025-04-16"
 attachment = true
@@ -8,8 +8,8 @@ open_weights = false
 tool_call = true
 
 [cost]
-input = 1.80
-output = 7.20
+input = 1.8
+output = 7.2
 cache_read = 0.45
 
 [limit]

@@ -1,4 +1,4 @@
-name = "O3 Deep Research"
+name = "o3-deep-research"
 release_date = "2025-06-27"
 last_updated = "2025-06-27"
 attachment = true
@@ -10,7 +10,7 @@ tool_call = true
 [cost]
 input = 9
 output = 36
-cache_read = 2.30
+cache_read = 2.3
 
 [limit]
 context = 200_000
