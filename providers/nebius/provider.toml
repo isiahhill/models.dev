@@ -1,5 +1,5 @@
-name = "Nebius AI Studio"
+name = "Nebius Token Factory"
 env = ["NEBIUS_API_KEY"]
 npm = "@ai-sdk/openai-compatible"
-api = "https://api.studio.nebius.com/v1/"
-doc = "https://docs.studio.nebius.com/quickstart"
+api = "https://api.tokenfactory.nebius.com/v1"
+doc = "https://docs.tokenfactory.nebius.com/"
