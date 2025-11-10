@@ -8,6 +8,7 @@ export const Model = z
     reasoning: z.boolean(),
     temperature: z.boolean(),
     tool_call: z.boolean(),
+    structured_output: z.boolean().optional(),
     knowledge: z
       .string()
       .regex(/^\d{4}-\d{2}(-\d{2})?$/, {
