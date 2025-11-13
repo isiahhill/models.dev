@@ -1,0 +1,22 @@
+name = "MiniMax M2"
+attachment = false
+reasoning = true
+tool_call = true
+temperature = true
+release_date = "2025-11-13"
+last_updated = "2025-11-13"
+open_weights = true
+
+[cost]
+input = 0.00
+output = 0.00
+cache_read = 0.00
+cache_write = 0.00
+
+[limit]
+context = 204_800
+output = 131_100
+
+[modalities]
+input = ["text"]
+output = ["text"]
