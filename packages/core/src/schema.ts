@@ -77,6 +77,7 @@ export const Model = z
 
 export type Model = z.infer<typeof Model>;
 
+
 export const Provider = z
   .object({
     id: z.string(),
@@ -95,15 +96,26 @@ export const Provider = z
   .strict()
   .refine(
     (data) => {
+      const isOpenAIcompatible = data.npm === "@ai-sdk/openai-compatible";
+      const isAnthropic = data.npm === "@ai-sdk/anthropic";
+      const hasApi = data.api !== undefined;
+
       return (
-        (data.npm === "@ai-sdk/openai-compatible" && data.api !== undefined) ||
-        (data.npm !== "@ai-sdk/openai-compatible" && data.api === undefined)
+        // openai-compatible: must have api
+        (isOpenAIcompatible && hasApi) ||
+
+        // anthropic: api optional (always allowed)
+        isAnthropic ||
+
+        // all others: must NOT have api
+        (!isOpenAIcompatible && !isAnthropic && !hasApi)
       );
     },
     {
       message:
-        "'api' field is required if and only if npm is '@ai-sdk/openai-compatible'",
+        "'api' is required for openai-compatible, optional for anthropic, forbidden otherwise",
       path: ["api"],
     }
   );
+
 export type Provider = z.infer<typeof Provider>;
