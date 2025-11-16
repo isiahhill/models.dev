@@ -1,20 +1,20 @@
 name = "MiniMax M2"
 release_date = "2025-10-27"
-last_updated = "2025-10-27"
+last_updated = "2025-11-08"
 attachment = false
 reasoning = true
 temperature = true
-tool_call = true
 knowledge = "2024-10"
+tool_call = true
 open_weights = true
 
 [cost]
-input = 0.15
-output = 0.45
+input = 0.26
+output = 1.02
 
 [limit]
-context = 200_000
-output = 128_000
+context = 196_608
+output = 196_608
 
 [modalities]
 input = ["text"]

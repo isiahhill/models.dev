@@ -8,9 +8,13 @@ knowledge = "2025-08"
 tool_call = true
 open_weights = false
 
+[cost]
+input = 0
+output = 0
+
 [limit]
-context = 256_000
-output = 10_000
+context = 128_000
+output = 64_000
 
 [modalities]
 input = ["text"]

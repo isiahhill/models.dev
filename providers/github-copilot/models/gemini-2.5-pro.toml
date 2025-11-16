@@ -8,6 +8,10 @@ knowledge = "2025-01"
 tool_call = true
 open_weights = false
 
+[cost]
+input = 0
+output = 0
+
 [limit]
 context = 128_000
 output = 64_000

@@ -1,6 +1,6 @@
 name = "DeepSeek R1T Chimera"
 release_date = "2025-04-26"
-last_updated = "2025-04-26"
+last_updated = "2025-11-08"
 attachment = false
 reasoning = true
 temperature = true
@@ -9,8 +9,8 @@ tool_call = false
 open_weights = true
 
 [cost]
-input = 0.18
-output = 0.72
+input = 0.30
+output = 1.20
 
 [limit]
 context = 163_840

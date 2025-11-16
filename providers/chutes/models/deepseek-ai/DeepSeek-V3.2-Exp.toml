@@ -1,20 +1,21 @@
 name = "DeepSeek V3.2 Exp"
-attachment = false         # or false - supports file attachments
-reasoning = true           # or true - supports reasoning / chain-of-thought
-tool_call = true            # or false - supports tool calling
-temperature = true          # Knowledge-cutoff date
+release_date = "2025-09-29"
+last_updated = "2025-11-08"
+attachment = false
+reasoning = true
+temperature = true
+
+tool_call = true
 open_weights = true
-release_date = "2025-09-29" # First public release date
-last_updated = "2025-09-29" # Most recent update date
 
 [cost]
-input = 0.2500                # Cost per million input tokens (USD)
-output = 0.3500            # Cost per million output tokens (USD)
+input = 0.25
+output = 0.35
 
 [limit]
-context = 128_000           # Maximum context window (tokens)
-output = 64_000              # Maximum output tokens
+context = 163_840
+output = 163_840
 
 [modalities]
-input = ["text"]   # Supported input modalities
-output = ["text"]           # Supported output modalities
+input = ["text"]
+output = ["text"]

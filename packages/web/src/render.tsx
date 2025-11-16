@@ -317,6 +317,9 @@ export const Rendered = renderToString(
             Output Limit <span class="sort-indicator"></span>
           </th>
           <th class="sortable" data-type="boolean">
+            Structured Output <span class="sort-indicator"></span>
+          </th>
+          <th class="sortable" data-type="boolean">
             Temperature <span class="sort-indicator"></span>
           </th>
           <th class="sortable" data-type="text">
@@ -426,6 +429,7 @@ export const Rendered = renderToString(
                   <td>{renderCost(model.cost?.output_audio)}</td>
                   <td>{model.limit.context.toLocaleString()}</td>
                   <td>{model.limit.output.toLocaleString()}</td>
+                  <td>{model.structured_output === undefined ? "-" : model.structured_output ? "Yes" : "No"}</td>
                   <td>{model.temperature ? "Yes" : "No"}</td>
                   <td>{model.open_weights ? "Open" : "Closed"}</td>
                   <td>

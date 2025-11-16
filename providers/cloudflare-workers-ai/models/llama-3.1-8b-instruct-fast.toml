@@ -9,6 +9,10 @@ open_weights = true
 release_date = "2024-07-18"
 last_updated = "2024-09-25"
 
+[cost]
+input = 0.045
+output = 0.384
+
 [limit]
 context = 128000
 output = 128000

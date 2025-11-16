@@ -1,6 +1,6 @@
 name = "Qwen3 30B A3B"
 release_date = "2025-04-28"
-last_updated = "2025-04-28"
+last_updated = "2025-11-08"
 attachment = false
 reasoning = true
 temperature = true
@@ -9,8 +9,8 @@ tool_call = true
 open_weights = true
 
 [cost]
-input = 0.02
-output = 0.08
+input = 0.06
+output = 0.22
 
 [limit]
 context = 40_960

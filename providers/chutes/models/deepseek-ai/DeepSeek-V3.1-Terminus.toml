@@ -1,6 +1,6 @@
 name = "DeepSeek V3.1 Terminus"
 release_date = "2025-09-22"
-last_updated = "2025-09-22"
+last_updated = "2025-11-08"
 attachment = false
 reasoning = true
 temperature = true
@@ -9,12 +9,12 @@ tool_call = true
 open_weights = true
 
 [cost]
-input = 0.25
-output = 1.00
+input = 0.23
+output = 0.90
 
 [limit]
-context = 131_072
-output = 65_536
+context = 163_840
+output = 163_840
 
 [modalities]
 input = ["text"]
