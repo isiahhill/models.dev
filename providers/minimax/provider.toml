@@ -2,4 +2,4 @@ name = "Minimax"
 env = ["MINIMAX_API_KEY"]
 npm = "@ai-sdk/anthropic"
 doc = "https://platform.minimax.io/docs/guides/quickstart"
-api = "https://api.minimaxi.com/anthropic/v1"
+api = "https://api.minimax.io/anthropic/v1"
