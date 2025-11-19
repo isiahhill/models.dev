@@ -1,15 +1,15 @@
-name = "Qwen3-235B-Think-CS"
+name = "Qwen3-235B-2507-CS"
 release_date = "2025-08-06"
 last_updated = "2025-08-06"
 attachment = true
-reasoning = false
+reasoning = null
 temperature = false
 open_weights = false
-tool_call = false
+tool_call = null
 
 [limit]
-context = 0
-output = 0
+context = null
+output = null
 
 [modalities]
 input = ["text"]
