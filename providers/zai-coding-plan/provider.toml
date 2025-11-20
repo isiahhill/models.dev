@@ -2,4 +2,4 @@ name = "Z.AI Coding Plan"
 env = ["ZHIPU_API_KEY"]
 npm = "@ai-sdk/anthropic"
 doc = "https://docs.z.ai/devpack/overview"
-api = "https://api.z.ai/api/anthropic/v1"
+api = "https://api.z.ai/api/anthropic/v1",
