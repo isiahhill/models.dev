@@ -22,3 +22,6 @@ output = 64_000
 [modalities]
 input = ["text", "image"]
 output = ["text"]
+
+[provider]
+npm = "@anthropic-ai/foundry-sdk"
