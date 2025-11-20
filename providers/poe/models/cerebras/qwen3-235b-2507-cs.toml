@@ -2,14 +2,14 @@ name = "Qwen3-235B-2507-CS"
 release_date = "2025-08-06"
 last_updated = "2025-08-06"
 attachment = true
-reasoning = null
+reasoning = false
 temperature = false
 open_weights = false
-tool_call = null
+tool_call = false
 
 [limit]
-context = null
-output = null
+context = 0
+output = 0
 
 [modalities]
 input = ["text"]

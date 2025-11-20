@@ -2,14 +2,14 @@ name = "Sonic-3.0"
 release_date = "2025-10-22"
 last_updated = "2025-10-22"
 attachment = true
-reasoning = null
+reasoning = false
 temperature = false
 open_weights = false
-tool_call = null
+tool_call = false
 
 [limit]
-context = null
-output = null
+context = 0
+output = 0
 
 [modalities]
 input = ["text"]

@@ -2,10 +2,10 @@ name = "Gemini-3.0-Pro"
 release_date = "2025-10-22"
 last_updated = "2025-10-22"
 attachment = true
-reasoning = null
+reasoning = true
 temperature = false
 open_weights = false
-tool_call = null
+tool_call = true
 
 [cost]
 input = 1.6
@@ -14,7 +14,7 @@ cache_read = 0.16
 
 [limit]
 context = 1_048_576
-output = null
+output = 64_000
 
 [modalities]
 input = ["text", "image", "video", "audio"]
