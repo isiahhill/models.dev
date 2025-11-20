@@ -1,0 +1,21 @@
+name = "Nano-Banana"
+release_date = "2025-08-21"
+last_updated = "2025-08-21"
+attachment = true
+reasoning = false
+temperature = false
+open_weights = false
+tool_call = true
+
+[cost]
+input = 0.21
+output = 1.7
+image = 21
+
+[limit]
+context = 32_768
+output = 0
+
+[modalities]
+input = ["text", "image"]
+output = ["text", "image"]

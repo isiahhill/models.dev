@@ -1,0 +1,20 @@
+name = "Grok-2"
+release_date = "2025-01-14"
+last_updated = "2025-01-14"
+attachment = true
+reasoning = false
+temperature = false
+open_weights = false
+tool_call = true
+
+[cost]
+input = 2
+output = 10
+
+[limit]
+context = 131_072
+output = 8_192
+
+[modalities]
+input = ["text"]
+output = ["text"]

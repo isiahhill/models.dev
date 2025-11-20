@@ -1,0 +1,21 @@
+name = "o3-deep-research"
+release_date = "2025-06-27"
+last_updated = "2025-06-27"
+attachment = true
+reasoning = true
+temperature = false
+open_weights = false
+tool_call = true
+
+[cost]
+input = 9
+output = 36
+cache_read = 2.3
+
+[limit]
+context = 200_000
+output = 100000
+
+[modalities]
+input = ["text"]
+output = ["text"]

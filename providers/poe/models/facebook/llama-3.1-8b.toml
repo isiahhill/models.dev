@@ -1,0 +1,20 @@
+name = "Llama-3.1-8B"
+release_date = "2024-08-08"
+last_updated = "2024-08-08"
+attachment = true
+reasoning = false
+temperature = false
+open_weights = false
+tool_call = true
+
+[cost]
+input = 0.2
+output = 0.2
+
+[limit]
+context = 8_192
+output = 0
+
+[modalities]
+input = ["text", "image"]
+output = ["text"]
