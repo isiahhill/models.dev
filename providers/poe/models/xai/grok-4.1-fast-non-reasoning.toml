@@ -1,0 +1,16 @@
+name = "Grok-4.1-Fast-Non-Reasoning"
+release_date = "2025-11-19"
+last_updated = "2025-11-19"
+attachment = true
+reasoning = null
+temperature = false
+open_weights = false
+tool_call = null
+
+[limit]
+context = 256_000
+output = null
+
+[modalities]
+input = ["text", "image"]
+output = ["text"]
