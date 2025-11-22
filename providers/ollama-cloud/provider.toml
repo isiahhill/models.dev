@@ -1,0 +1,4 @@
+name = "Ollama Cloud"
+env = ["OLLAMA_API_KEY"]
+npm = "ai-sdk-ollama"
+doc = "https://docs.ollama.com/cloud"
