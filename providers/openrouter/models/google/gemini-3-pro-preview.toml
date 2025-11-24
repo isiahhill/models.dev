@@ -19,3 +19,6 @@ output = 66_000
 [modalities]
 input = ["text", "image", "audio", "video", "pdf"]
 output = ["text"]
+
+[provider]
+npm = "@openrouter/ai-sdk-provider"

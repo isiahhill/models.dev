@@ -20,3 +20,6 @@ output = 262_144
 [modalities]
 input = ["text"]
 output = ["text"]
+
+[provider]
+npm = "@openrouter/ai-sdk-provider"
