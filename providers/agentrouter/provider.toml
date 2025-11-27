@@ -1,0 +1,5 @@
+name = "AgentRouter"
+env = ["AGENTROUTER_API_KEY"]
+npm = "@ai-sdk/openai-compatible"
+doc = "https://docs.agentrouter.org"
+api = "https://agentrouter.org/v1"

@@ -1,0 +1,20 @@
+name = "agentrouter-gpt5"
+release_date = "2025-11-27"
+last_updated = "2025-11-27"
+attachment = false
+reasoning = true
+temperature = true
+tool_call = true
+open_weights = false
+
+[cost]
+input = 0.0
+output = 0.0
+
+[limit]
+context = 1280000
+output = 1280000
+
+[modalities]
+input = ["text"]
+output = ["text"]
