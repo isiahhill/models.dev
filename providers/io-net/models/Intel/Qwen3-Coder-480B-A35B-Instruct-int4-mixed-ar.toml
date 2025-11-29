@@ -1,5 +1,4 @@
 name = "Qwen 3 Coder 480B"
-id = "Intel/Qwen3-Coder-480B-A35B-Instruct-int4-mixed-ar"
 release_date = "2025-01-15"
 last_updated = "2025-01-15"
 attachment = false

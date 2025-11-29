@@ -1,5 +1,4 @@
-name = "GPT-OSS 120B"
-id = "openai/gpt-oss-120b"
+name = "GPT-OSS 20B"
 release_date = "2024-12-01"
 last_updated = "2024-12-01"
 attachment = false
@@ -10,13 +9,13 @@ knowledge = "2024-10"
 open_weights = true
 
 [cost]
-input = 0.04
-output = 0.4
-cache_read = 0.02
-cache_write = 0.08
+input = 0.03
+output = 0.14
+cache_read = 0.015
+cache_write = 0.06
 
 [limit]
-context = 131072
+context = 64000
 output = 4096
 
 [modalities]

@@ -1,5 +1,4 @@
 name = "Llama 3.3 70B Instruct"
-id = "meta-llama/Llama-3.3-70B-Instruct"
 release_date = "2024-12-06"
 last_updated = "2024-12-06"
 attachment = false

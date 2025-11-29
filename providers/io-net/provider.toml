@@ -1,4 +1,4 @@
-name = "IO Intelligence"
+name = "IO.NET"
 env = ["IOINTELLIGENCE_API_KEY"]
 npm = "@ai-sdk/openai-compatible"
 doc = "https://io.net/docs/guides/intelligence/io-intelligence"

@@ -1,5 +1,4 @@
 name = "Qwen 2.5 VL 32B Instruct"
-id = "Qwen/Qwen2.5-VL-32B-Instruct"
 release_date = "2024-11-01"
 last_updated = "2024-11-01"
 attachment = false
