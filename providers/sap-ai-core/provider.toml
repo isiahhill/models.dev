@@ -1,0 +1,4 @@
+name = "SAP AI Core"
+env = ["SAP_AI_SERVICE_KEY"]
+npm = "@mymediset/sap-ai-provider"
+doc = "https://help.sap.com/docs/sap-ai-core"
