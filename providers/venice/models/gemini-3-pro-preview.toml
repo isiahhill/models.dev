@@ -1,0 +1,21 @@
+name = "Gemini 3 Pro Preview"
+attachment = true
+reasoning = true
+tool_call = true
+temperature = true
+knowledge = "2024-04"
+release_date = "2025-11-18"
+last_updated = "2025-11-18"
+open_weights = false
+
+[cost]
+input = 2.50
+output = 15.00
+
+[limit]
+context = 202_752
+output = 8_192
+
+[modalities]
+input = ["text"]
+output = ["text"]
