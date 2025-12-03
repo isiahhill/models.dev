@@ -1,4 +1,4 @@
-name = "MiniMax M2"
+name = "MiniMax-M2"
 attachment = false
 reasoning = true
 tool_call = true
