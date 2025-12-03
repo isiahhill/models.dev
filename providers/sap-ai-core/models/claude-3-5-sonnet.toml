@@ -1,9 +1,11 @@
 name = "Claude Sonnet 3.5"
 release_date = "2024-06-20"
+last_updated = "2024-06-20"
 attachment = true
 reasoning = false
 temperature = true
 tool_call = true
+open_weights = false
 
 [cost]
 input = 3.00
