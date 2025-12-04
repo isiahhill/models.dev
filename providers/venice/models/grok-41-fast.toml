@@ -1,0 +1,21 @@
+name = "Grok 4.1 Fast"
+release_date = "2025-11-19"
+last_updated = "2025-11-19"
+attachment = true
+reasoning = true
+temperature = true
+knowledge = "2025-07"
+tool_call = true
+open_weights = false
+
+[cost]
+input = 0.50
+output = 1.25
+
+[limit]
+context = 262_144
+output = 8_192
+
+[modalities]
+input = ["text", "image"]
+output = ["text"]
