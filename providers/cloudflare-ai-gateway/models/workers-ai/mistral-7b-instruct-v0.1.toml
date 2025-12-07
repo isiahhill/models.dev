@@ -1,21 +1,19 @@
-# https://developers.cloudflare.com/workers-ai/models/mistral-7b-instruct-v0.1/
-
-name = "@cf/mistral/mistral-7b-instruct-v0.1"
+name = "mistral 7u instruct v0.1"
+release_date = "2025-04-03"
+last_updated = "2025-04-03"
 attachment = false
 reasoning = false
-tool_call = true
 temperature = true
-open_weights = true
-release_date = "2023-09-27"
-last_updated = "2025-07-24"
+tool_call = false
+open_weights = false
 
 [cost]
-input = 0.11
-output = 0.19
+input = 0
+output = 0
 
 [limit]
-context = 2824
-output = 2824
+context = 128000
+output = 16384
 
 [modalities]
 input = ["text"]

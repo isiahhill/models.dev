@@ -1,21 +1,19 @@
-# https://developers.cloudflare.com/workers-ai/models/granite-4.0-h-micro/
-
-name = "@cf/ibm-granite/granite-4.0-h-micro"
+name = "granite 4.0 h micro"
+release_date = "2025-10-15"
+last_updated = "2025-10-15"
 attachment = false
 reasoning = false
-tool_call = true
-open_weights = false
-release_date = "2025-10-07"
-last_updated = "2025-12-02"
 temperature = true
-
-[limit]
-context = 131000
-output = 0
+tool_call = false
+open_weights = false
 
 [cost]
-input = 0.017
-output = 0.11
+input = 0
+output = 0
+
+[limit]
+context = 128000
+output = 16384
 
 [modalities]
 input = ["text"]

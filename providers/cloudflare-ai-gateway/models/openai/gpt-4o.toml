@@ -1,0 +1,20 @@
+name = "gpt 4o"
+release_date = "2025-02-10"
+last_updated = "2025-02-10"
+attachment = false
+reasoning = false
+temperature = true
+tool_call = false
+open_weights = false
+
+[cost]
+input = 2.5
+output = 10
+
+[limit]
+context = 128000
+output = 16384
+
+[modalities]
+input = ["text"]
+output = ["text"]

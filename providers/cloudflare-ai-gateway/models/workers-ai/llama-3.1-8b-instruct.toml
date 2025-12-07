@@ -1,21 +1,19 @@
-# https://developers.cloudflare.com/workers-ai/models/llama-3.1-8b-instruct/
-
-name = "@cf/meta/llama-3.1-8b-instruct"
+name = "llama 3.1 8u instruct"
+release_date = "2025-04-03"
+last_updated = "2025-04-03"
 attachment = false
 reasoning = false
-tool_call = true
 temperature = true
-open_weights = true
-release_date = "2024-07-18"
-last_updated = "2024-09-25"
+tool_call = false
+open_weights = false
 
 [cost]
-input = 0.28
-output = 0.83
+input = 0
+output = 0
 
 [limit]
-context = 7968
-output = 7968
+context = 128000
+output = 16384
 
 [modalities]
 input = ["text"]

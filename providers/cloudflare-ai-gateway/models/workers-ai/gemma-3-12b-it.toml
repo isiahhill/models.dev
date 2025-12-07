@@ -1,21 +1,19 @@
-# https://developers.cloudflare.com/workers-ai/models/gemma-3-12b-it/
-
-name = "@cf/google/gemma-3-12b-it"
+name = "gemma 3 12u it"
+release_date = "2025-04-11"
+last_updated = "2025-04-11"
 attachment = false
 reasoning = false
-tool_call = true
 temperature = true
-open_weights = true
-release_date = "2025-03-01"
-last_updated = "2025-03-21"
+tool_call = false
+open_weights = false
 
 [cost]
-input = 0.35
-output = 0.56
+input = 0
+output = 0
 
 [limit]
-context = 80000
-output = 80000
+context = 128000
+output = 16384
 
 [modalities]
 input = ["text"]

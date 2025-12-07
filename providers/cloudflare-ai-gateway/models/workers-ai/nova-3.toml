@@ -1,22 +1,20 @@
-# https://developers.cloudflare.com/workers-ai/models/nova-3/
-
-name = "@cf/deepgram/nova-3"
+name = "nova 3"
+release_date = "2025-11-14"
+last_updated = "2025-11-14"
 attachment = false
 reasoning = false
+temperature = true
 tool_call = false
-temperature = false
-open_weights = true
-release_date = "2025-06-05"
-last_updated = "2025-07-08"
+open_weights = false
 
 [cost]
-input = 0.0052
-output = 0.0052
-
-[limit]
-context = 0
+input = 0
 output = 0
 
+[limit]
+context = 128000
+output = 16384
+
 [modalities]
-input = ["audio"]
+input = ["text"]
 output = ["text"]

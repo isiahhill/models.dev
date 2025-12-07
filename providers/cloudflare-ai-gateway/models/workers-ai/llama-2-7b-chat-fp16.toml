@@ -1,21 +1,19 @@
-# https://developers.cloudflare.com/workers-ai/models/llama-2-7b-chat-fp16/
-
-name = "@cf/meta/llama-2-7b-chat-fp16"
+name = "llama 2 7u chat fp16"
+release_date = "2025-04-03"
+last_updated = "2025-04-03"
 attachment = false
 reasoning = false
-tool_call = true
 temperature = true
-open_weights = true
-release_date = "2023-07-26"
-last_updated = "2023-07-26"
+tool_call = false
+open_weights = false
 
 [cost]
-input = 0.56
+input = 0
 output = 6.67
 
 [limit]
-context = 4096
-output = 4096
+context = 128000
+output = 16384
 
 [modalities]
 input = ["text"]

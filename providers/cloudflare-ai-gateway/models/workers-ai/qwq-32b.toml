@@ -1,21 +1,19 @@
-# https://developers.cloudflare.com/workers-ai/models/qwq-32b/
-
-name = "@cf/qwen/qwq-32b"
+name = "qwq 32b"
+release_date = "2025-04-11"
+last_updated = "2025-04-11"
 attachment = false
 reasoning = false
-tool_call = true
 temperature = true
-open_weights = true
-release_date = "2025-03-05"
-last_updated = "2025-03-11"
+tool_call = false
+open_weights = false
 
 [cost]
-input = 0.66
+input = 0
 output = 1
 
 [limit]
-context = 24000
-output = 24000
+context = 128000
+output = 16384
 
 [modalities]
 input = ["text"]
