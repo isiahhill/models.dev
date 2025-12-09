@@ -18,5 +18,5 @@ context = 189_096
 output = 8_192
 
 [modalities]
-input = ["text", "image", "pdf"]
+input = ["text", "image"]
 output = ["text"]

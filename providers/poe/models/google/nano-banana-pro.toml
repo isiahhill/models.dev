@@ -1,0 +1,22 @@
+name = "Nano-Banana-Pro"
+release_date = "2025-11-19"
+last_updated = "2025-11-19"
+attachment = true
+reasoning = false
+temperature = false
+open_weights = false
+tool_call = true
+
+[cost]
+input = 1.6
+output = 9.6
+cache_read = 0.16
+image = 96
+
+[limit]
+context = 65_536
+output = 0
+
+[modalities]
+input = ["text", "image"]
+output = ["image"]

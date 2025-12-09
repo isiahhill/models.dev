@@ -9,7 +9,7 @@ tool_call = true
 
 [cost]
 input = 0.85
-output = 4.2
+output = 4.3
 cache_read = 0.085
 cache_write = 1.1
 
@@ -18,5 +18,5 @@ context = 192_000
 output = 64_000
 
 [modalities]
-input = ["text", "image", "pdf"]
+input = ["text", "image"]
 output = ["text"]

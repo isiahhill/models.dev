@@ -1,6 +1,6 @@
-name = "Llama-3.1-405B"
-release_date = "2024-08-08"
-last_updated = "2024-08-08"
+name = "GPT-3.5-Turbo-Instruct"
+release_date = "2023-09-20"
+last_updated = "2023-09-20"
 attachment = true
 reasoning = false
 temperature = false
@@ -8,12 +8,12 @@ open_weights = false
 tool_call = true
 
 [cost]
-input = 3
-output = 3
+input = 1.4
+output = 1.8
 
 [limit]
-context = 8_192
-output = 0
+context = 3_500
+output = 1024
 
 [modalities]
 input = ["text", "image"]

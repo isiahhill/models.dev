@@ -1,19 +1,19 @@
-name = "Llama-3.1-70B"
-release_date = "2024-08-08"
-last_updated = "2024-08-08"
+name = "o1"
+release_date = "2024-12-18"
+last_updated = "2024-12-18"
 attachment = true
-reasoning = false
+reasoning = true
 temperature = false
 open_weights = false
 tool_call = true
 
 [cost]
-input = 0.9
-output = 0.9
+input = 14
+output = 54
 
 [limit]
-context = 8_192
-output = 0
+context = 200_000
+output = 100000
 
 [modalities]
 input = ["text", "image"]
