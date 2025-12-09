@@ -91,6 +91,7 @@ name = "Model Display Name"
 attachment = true           # or false - supports file attachments
 reasoning = false           # or true - supports reasoning / chain-of-thought
 tool_call = true            # or false - supports tool calling
+interleaved = true          # or { name = "reasoning_content" | "reasoning_details" }
 structured_output = true    # or false - supports a dedicated structured output feature
 temperature = true          # or false - supports temperature control
 knowledge = "2024-04"       # Knowledge-cutoff date
@@ -151,6 +152,7 @@ Models must conform to the following schema, as defined in `app/schemas.ts`.
 - `attachment`: Boolean — Supports file attachments
 - `reasoning`: Boolean — Supports reasoning / chain-of-thought
 - `tool_call`: Boolean - Supports tool calling
+- `interleaved` _(optional)_: `true` for general support or an object with `name` set to either `reasoning_content` or `reasoning_details` to specify which stream is interleaved
 - `structured_output` _(optional)_: Boolean — Supports structured output feature
 - `temperature` _(optional)_: Boolean — Supports temperature control
 - `knowledge` _(optional)_: String — Knowledge-cutoff date in `YYYY-MM` or `YYYY-MM-DD` format
