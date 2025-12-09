@@ -1,11 +1,11 @@
 name = "Venice Medium"
-attachment = false
+attachment = true
 reasoning = false
 tool_call = true
 temperature = true
 knowledge = "2023-10"
 release_date = "2025-07-15"
-last_updated = "2025-07-15"
+last_updated = "2025-12-09"
 open_weights = true
 
 [cost]

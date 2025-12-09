@@ -1,11 +1,11 @@
-name = "Venice Large 1.1"
+name = "Qwen 3 235B A22B Thinking 2507"
 attachment = false
 reasoning = true
 tool_call = true
 temperature = true
-knowledge = "2024-10"
+knowledge = "2025-07"
 release_date = "2025-07-27"
-last_updated = "2025-12-09"
+last_updated = "2025-07-27"
 open_weights = true
 
 [cost]
