@@ -7,6 +7,9 @@ release_date = "2025-10-23"
 last_updated = "2025-10-23"
 open_weights = true
 
+[interleaved]
+name = "reasoning_details"
+
 [cost]
 input = 0.28
 output = 1.15
