@@ -5,12 +5,12 @@ tool_call = true
 temperature = true
 knowledge = "2024-07"
 release_date = "2025-07-27"
-last_updated = "2025-07-27"
+last_updated = "2025-12-09"
 open_weights = true
 
 [cost]
-input = 0.15
-output = 0.6
+input = 0.05
+output = 0.15
 
 [limit]
 context = 32_768

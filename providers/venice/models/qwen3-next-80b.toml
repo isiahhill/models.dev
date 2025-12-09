@@ -1,19 +1,19 @@
-name = "Venice Large 1.1"
+name = "Qwen 3 Next 80b"
 attachment = false
-reasoning = true
+reasoning = false
 tool_call = true
 temperature = true
-knowledge = "2024-10"
+knowledge = "2025-07"
 release_date = "2025-07-27"
-last_updated = "2025-12-09"
+last_updated = "2025-07-27"
 open_weights = true
 
 [cost]
-input = 0.45
-output = 3.5
+input = 0.35
+output = 1.9
 
 [limit]
-context = 131_072
+context = 262_144
 output = 8_192
 
 [modalities]
