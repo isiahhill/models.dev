@@ -1,21 +1,21 @@
-name = "DeepSeek V3.2"
-release_date = "2025-12-01"
+name = "GLM 4.6V"
+release_date = "2025-12-11"
 last_updated = "2025-12-11"
 attachment = false
 reasoning = true
 temperature = true
-knowledge = "2025-12"
+
 tool_call = true
 open_weights = true
 
 [cost]
-input = 0.27
-output = 0.41
+input = 0.30
+output = 0.90
 
 [limit]
-context = 163_840
-output = 16_384
+context = 131_072
+output = 65_536
 
 [modalities]
-input = ["text"]
+input = ["text", "image"]
 output = ["text"]

@@ -1,8 +1,8 @@
-name = "MAI DS R1 FP8"
-release_date = "2025-11-08"
-last_updated = "2025-11-08"
+name = "GLM 4.6 TEE"
+release_date = "2025-12-11"
+last_updated = "2025-12-11"
 attachment = false
-reasoning = true
+reasoning = false
 temperature = true
 
 tool_call = false
@@ -13,8 +13,8 @@ input = 0.30
 output = 1.20
 
 [limit]
-context = 163_840
-output = 163_840
+context = 32_768
+output = 8_192
 
 [modalities]
 input = ["text"]

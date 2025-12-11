@@ -1,5 +1,5 @@
-name = "InternVL3 78B"
-release_date = "2025-11-08"
+name = "Hermes 4.3 36B"
+release_date = "2025-12-11"
 last_updated = "2025-12-11"
 attachment = false
 reasoning = false
@@ -9,13 +9,13 @@ tool_call = false
 open_weights = true
 
 [cost]
-input = 0.10
-output = 0.39
+input = 0.15
+output = 0.60
 
 [limit]
 context = 32_768
-output = 32_768
+output = 8_192
 
 [modalities]
-input = ["text", "image"]
+input = ["text"]
 output = ["text"]
