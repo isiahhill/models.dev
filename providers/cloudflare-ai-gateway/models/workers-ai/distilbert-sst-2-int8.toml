@@ -1,4 +1,5 @@
 name = "DistilBERT SST-2 INT8"
+family = "distilbert-sst"
 release_date = "2025-08-23"
 last_updated = "2025-08-23"
 attachment = false

@@ -1,4 +1,5 @@
 name = "Llama 3.3 70B Instruct FP8 Fast"
+family = "llama-3.3"
 release_date = "2025-08-23"
 last_updated = "2025-08-23"
 attachment = false

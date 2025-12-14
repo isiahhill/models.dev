@@ -1,4 +1,5 @@
 name = "BGE Base EN V1.5"
+family = "bge-base"
 release_date = "2025-08-23"
 last_updated = "2025-08-23"
 attachment = false

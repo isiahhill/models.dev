@@ -1,4 +1,5 @@
 name = "BGE M3"
+family = "bge-m3"
 release_date = "2025-08-23"
 last_updated = "2025-08-23"
 attachment = false
