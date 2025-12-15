@@ -9,7 +9,7 @@ temperature = true
 open_weights = true
 
 [interleaved]
-name = "reasoning_content"
+field = "reasoning_content"
 
 [cost]
 input = 0.656
