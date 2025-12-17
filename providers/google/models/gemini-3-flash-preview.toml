@@ -11,14 +11,14 @@ knowledge = "2025-01"
 open_weights = false
 
 [cost]
-input = 0.15
-output = 0.60
-cache_read = 0.0375
+input = 0.50
+output = 3.00
+cache_read = 0.05
 
 [cost.context_over_200k]
-input = 0.30
-output = 1.20
-cache_read = 0.075
+input = 0.50
+output = 3.00
+cache_read = 0.05
 
 [limit]
 context = 1048576
