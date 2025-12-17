@@ -1,7 +1,7 @@
-name = "Gemini 3 Pro"
-family = "gemini-pro"
-release_date = "2025-11-18"
-last_updated = "2025-11-18"
+name = "Gemini 3 Flash"
+family = "gemini-flash"
+release_date = "2025-12-17"
+last_updated = "2025-12-17"
 attachment = true
 reasoning = true
 temperature = true
@@ -11,14 +11,9 @@ knowledge = "2025-01"
 open_weights = false
 
 [cost]
-input = 2.00
-output = 12.00
-cache_read = 0.20
-
-[cost.context_over_200k]
-input = 4.00
-output = 18.00
-cache_read = 0.40
+input = 0.50
+output = 3.00
+cache_read = 0.05
 
 [limit]
 context = 1_048_576
