@@ -1,5 +1,5 @@
-name = "Devstral Small 2"
-family = "devstral-small"
+name = "Devstral 2"
+family = "devstral-medium"
 release_date = "2025-12-09"
 last_updated = "2025-12-09"
 attachment = false
@@ -14,9 +14,9 @@ input = 0.00
 output = 0.00
 
 [limit]
-context = 256_000
-output = 256_000
+context = 262_144
+output = 262_144
 
 [modalities]
-input = ["text", "image"]
+input = ["text"]
 output = ["text"]
