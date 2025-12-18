@@ -4,16 +4,15 @@ Generate and update model TOMLs from Venice AI's API.
 
 Prerequisites
 - Install Bun: https://bun.sh
-- (Optional) Venice API key for alpha models
+- (Optional) Venice API key with alpha access to retrieve alpha models
 
 Commands
 - Generate/update files: `bun run venice:generate`
 - Dry run (preview changes): `bun run venice:generate --dry-run`
 - With API key: `bun run venice:generate --api-key=YOUR_KEY`
-- Validate configs: `bun validate`
 
 API Key
-The script can include alpha models when provided with a Venice API key.
+The script can include alpha models when provided with a Venice API key with alpha access.
 Key can be provided via:
 1. CLI argument: `--api-key=YOUR_KEY` or `--api-key YOUR_KEY`
 2. Environment variable: `VENICE_API_KEY`
