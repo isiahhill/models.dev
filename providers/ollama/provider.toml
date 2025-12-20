@@ -1,5 +1,5 @@
 name = "Ollama (Local)"
-env = ["OLLAMA_LOCAL_API_KEY"]
+env = []
 npm = "@ai-sdk/openai-compatible"
 api = "http://localhost:11434/v1"
 doc = "https://docs.ollama.com"
