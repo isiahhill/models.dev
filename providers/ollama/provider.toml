@@ -1,0 +1,4 @@
+name = "Ollama (Local)"
+npm = "@ai-sdk/openai-compatible"
+api = "http://localhost:11434/v1"
+doc = "https://docs.ollama.com"
