@@ -23,8 +23,8 @@ export async function generate(directory: string) {
     }
 
     const modelsPath = path.join(directory, providerID, "models");
-    const modelsStat = await Bun.file(modelsPath).stat();
-    if (!modelsStat.isDirectory()) {
+    const modelsStat = await Bun.file(modelsPath).stat().catch(() => null);
+    if (!modelsStat?.isDirectory()) {
       result[providerID] = provider.data;
       continue;
     }
