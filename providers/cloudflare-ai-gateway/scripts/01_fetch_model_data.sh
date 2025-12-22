@@ -29,7 +29,8 @@ echo "=== Step 1: Fetching models from Cloudflare AI Gateway ==="
 # =============================================================================
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-DATA_DIR="${SCRIPT_DIR}/data"
+PROVIDER_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
+DATA_DIR="${PROVIDER_DIR}/data"
 API_RESPONSE_FILE="${DATA_DIR}/api_response.json"
 
 # Validate required environment variables

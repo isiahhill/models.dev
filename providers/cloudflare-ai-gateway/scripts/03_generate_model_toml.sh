@@ -12,6 +12,7 @@
 set -eo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROVIDER_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
 source "${SCRIPT_DIR}/utils.sh"
 
 # =============================================================================
@@ -20,15 +21,14 @@ source "${SCRIPT_DIR}/utils.sh"
 
 echo ""
 echo "=== Step 3: Generating model TOML files ==="
-"${SCRIPT_DIR}/generate_model_toml.sh"
 
 # =============================================================================
 # Main script
 # =============================================================================
-MODELS_DIR="${SCRIPT_DIR}/models"
-DATA_DIR="${SCRIPT_DIR}/data"
-PROVIDERS_DIR="${SCRIPT_DIR}/../.."
-MODEL_NAMES_FILE="${SCRIPT_DIR}/model_names.json"
+MODELS_DIR="${PROVIDER_DIR}/models"
+DATA_DIR="${PROVIDER_DIR}/data"
+PROVIDERS_DIR="${PROVIDER_DIR}/.."
+MODEL_NAMES_FILE="${DATA_DIR}/model_names.json"
 API_RESPONSE_FILE="${DATA_DIR}/api_response.json"
 
 # Check if API response file exists
@@ -74,6 +74,7 @@ while IFS= read -r MODEL_JSON; do
   # Check if this model should be included
   if ! should_include_model "${MODEL_ID}"; then
     ((SKIPPED_COUNT++)) || true
+    echo "Skipping: ${MODEL_ID}"
     continue
   fi
   
@@ -85,15 +86,16 @@ while IFS= read -r MODEL_JSON; do
   
   # Convert model ID to file path based on the API format:
   # - "workers-ai/@cf/vendor/model-name" -> "workers-ai/model-name.toml"
-  # - "anthropic/claude-opus-4-5" -> "anthropic/claude-opus-4-5.toml"
-  # - "replicate/meta/llama-3" -> "replicate/meta/llama-3.toml"
+  # - "anthropic/claude-3.5-haiku" -> "anthropic/claude-3.5-haiku.toml" (keep dots)
+  # - "openai/gpt-5.1" -> "openai/gpt-5.1.toml" (keep dots)
+  # IMPORTANT: Cloudflare uses dots in model IDs, so we preserve them
   
   if [[ "${MODEL_ID}" == workers-ai/@cf/* ]]; then
     # Workers AI model: workers-ai/@cf/vendor/model-name -> workers-ai/model-name.toml
     MODEL_NAME=$(echo "${MODEL_ID}" | sed 's|workers-ai/@cf/[^/]*/||')
     MODEL_PATH="workers-ai/${MODEL_NAME}.toml"
   else
-    # All other models: keep the path structure as-is
+    # Keep the model ID as-is (Cloudflare uses dots in model names)
     MODEL_PATH="${MODEL_ID}.toml"
   fi
   
@@ -105,8 +107,8 @@ while IFS= read -r MODEL_JSON; do
   mkdir -p "${MODEL_DIR}"
   
   # Check if we should cross-reference from source provider
-  SOURCE_FILE=$(find_source_file "${PROVIDER}" "${MODEL_NAME}" "${PROVIDERS_DIR}" || true)
-  
+  SOURCE_FILE=$(find_source_file "${PROVIDER}" "${MODEL_NAME}" "${PROVIDERS_DIR}" || true);
+
   if [[ -n "${SOURCE_FILE}" && -f "${SOURCE_FILE}" ]]; then
     echo "Cross-referencing: ${MODEL_PATH} <- ${SOURCE_FILE#${PROVIDERS_DIR}/}"
     cp "${SOURCE_FILE}" "${FULL_PATH}"
@@ -190,14 +192,16 @@ echo "Checking for models to remove..."
 REMOVED_COUNT=0
 
 # Find all existing .toml files in models directory
-while IFS= read -r -d '' EXISTING_FILE; do
-  if ! grep -qxF "${EXISTING_FILE}" "${API_MODEL_FILES}"; then
-    REL_PATH="${EXISTING_FILE#${MODELS_DIR}/}"
-    echo "Removing model not in API: ${REL_PATH}"
-    rm -f "${EXISTING_FILE}"
-    ((REMOVED_COUNT++)) || true
-  fi
-done < <(find "${MODELS_DIR}" -name "*.toml" -type f -print0)
+if [[ -d "${MODELS_DIR}" ]]; then
+  while IFS= read -r -d '' EXISTING_FILE; do
+    if ! grep -qxF "${EXISTING_FILE}" "${API_MODEL_FILES}"; then
+      REL_PATH="${EXISTING_FILE#${MODELS_DIR}/}"
+      echo "Removing model not in API: ${REL_PATH}"
+      rm -f "${EXISTING_FILE}"
+      ((REMOVED_COUNT++)) || true
+    fi
+  done < <(find "${MODELS_DIR}" -name "*.toml" -type f -print0)
+fi
 
 # Clean up empty directories
 find "${MODELS_DIR}" -type d -empty -delete 2>/dev/null || true

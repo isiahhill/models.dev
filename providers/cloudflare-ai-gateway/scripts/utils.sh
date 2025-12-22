@@ -6,7 +6,7 @@
 # =============================================================================
 
 # Providers to include ALL models from (generated with defaults)
-INCLUDE_ALL_PROVIDERS="workers-ai replicate"
+INCLUDE_ALL_PROVIDERS="workers-ai"
 
 # Namespaces to skip entirely (provider/namespace format)
 SKIP_NAMESPACES="replicate/replicate-internal"
@@ -20,34 +20,35 @@ CROSS_REFERENCE_PROVIDERS="openai anthropic"
 # For cross-referenced providers, only include these well-known models (regex patterns)
 # Format: "provider/model-pattern"
 # Use $ anchor for exact matches to avoid dated versions and variants
+# NOTE: These patterns match the Cloudflare API format (which uses BOTH dots and hyphens)
+# The filename conversion to hyphens happens in 03_generate_model_toml.sh
 WELL_KNOWN_MODELS=(
   # OpenAI - canonical names only, no dated versions
-  # Note: dots must be escaped as \. to avoid matching dashes
-  "openai/gpt-5\\.1$"
-  "openai/gpt-5\\.1-codex$"
+  # API uses BOTH dots and hyphens: gpt-5.1 AND gpt-5-1, gpt-3.5-turbo AND gpt-3-5-turbo
+  "openai/gpt-5[\.-]2$"
+  "openai/gpt-5[\.-]1$"
+  "openai/gpt-5[\.-]1-codex$"
   "openai/gpt-4o$"
   "openai/gpt-4o-mini$"
   "openai/gpt-4-turbo$"
   "openai/gpt-4$"
-  "openai/gpt-3\\.5-turbo$"
+  "openai/gpt-3[\.-]5-turbo$"
   "openai/o1$"
-  "openai/o1-mini$"
-  "openai/o1-preview$"
   "openai/o3$"
   "openai/o3-mini$"
   "openai/o3-pro$"
   "openai/o4-mini$"
   
   # Anthropic - canonical names only, no dated versions or duplicates
-  # Note: dots must be escaped as \. to avoid matching dashes
-  "anthropic/claude-sonnet-4\\.5$"
-  "anthropic/claude-opus-4\\.5$"
-  "anthropic/claude-haiku-4\\.5$"
-  "anthropic/claude-opus-4\\.1$"
+  # API uses BOTH dots and hyphens: claude-3.5-sonnet AND claude-3-5-sonnet
+  "anthropic/claude-sonnet-4-5$"
+  "anthropic/claude-opus-4-5$"
+  "anthropic/claude-haiku-4-5$"
+  "anthropic/claude-opus-4-1$"
   "anthropic/claude-sonnet-4$"
   "anthropic/claude-opus-4$"
-  "anthropic/claude-3\\.5-sonnet$"
-  "anthropic/claude-3\\.5-haiku$"
+  "anthropic/claude-3[\.-]5-sonnet$"
+  "anthropic/claude-3[\.-]5-haiku$"
   "anthropic/claude-3-opus$"
   "anthropic/claude-3-sonnet$"
   "anthropic/claude-3-haiku$"
@@ -56,22 +57,33 @@ WELL_KNOWN_MODELS=(
 # =============================================================================
 # Helper function to get mapped model name for source file lookup
 # =============================================================================
+# This function maps Cloudflare API model names to source provider file names.
+# Input: model name from API (may have dots, e.g., "claude-3.5-sonnet")
+# Output: source file name (uses hyphens, e.g., "claude-3-5-sonnet-20241022")
 get_mapped_name() {
   local model_name="$1"
-  case "${model_name}" in
-    # Anthropic mappings (Cloudflare uses dots, source uses dashes)
-    "claude-sonnet-4.5") echo "claude-sonnet-4-5" ;;
-    "claude-opus-4.5") echo "claude-opus-4-5" ;;
-    "claude-haiku-4.5") echo "claude-haiku-4-5" ;;
-    "claude-opus-4.1") echo "claude-opus-4-1" ;;
+  # First convert dots to hyphens for consistent lookup
+  local normalized_name=$(echo "${model_name}" | sed 's/\./-/g')
+  
+  case "${normalized_name}" in
+    # Anthropic mappings - map to source file names with date suffixes
+    "claude-sonnet-4-5") echo "claude-sonnet-4-5" ;;
+    "claude-opus-4-5") echo "claude-opus-4-5" ;;
+    "claude-haiku-4-5") echo "claude-haiku-4-5" ;;
+    "claude-opus-4-1") echo "claude-opus-4-1" ;;
     "claude-sonnet-4") echo "claude-sonnet-4-0" ;;
     "claude-opus-4") echo "claude-opus-4-0" ;;
-    "claude-3.5-sonnet") echo "claude-3-5-sonnet-20241022" ;;
-    "claude-3.5-haiku") echo "claude-3-5-haiku-latest" ;;
+    "claude-3-5-sonnet") echo "claude-3-5-sonnet-20241022" ;;
+    "claude-3-5-haiku") echo "claude-3-5-haiku-latest" ;;
     "claude-3-opus") echo "claude-3-opus-20240229" ;;
     "claude-3-sonnet") echo "claude-3-sonnet-20240229" ;;
     "claude-3-haiku") echo "claude-3-haiku-20240307" ;;
-    *) echo "${model_name}" ;;
+    # OpenAI mappings - source files use dots, but we look up with hyphens
+    "gpt-5-1") echo "gpt-5.1" ;; 
+    "gpt-5-2") echo "gpt-5.2" ;;
+    "gpt-5-1-codex") echo "gpt-5.1-codex" ;;
+    "gpt-3-5-turbo") echo "gpt-3.5-turbo" ;;
+    *) echo "${normalized_name}" ;;
   esac
 }
 
@@ -84,7 +96,7 @@ should_include_model() {
   
   # Extract provider from model ID (first path segment)
   provider=$(echo "${model_id}" | cut -d'/' -f1)
-  
+
   # Check if model matches any skip pattern (partial match on model name)
   for skip in ${SKIP_MODELS}; do
     if [[ "${model_id}" == *"${skip}"* ]]; then
@@ -112,8 +124,9 @@ should_include_model() {
       return 0  # Include
     fi
   done
-  
-  return 1  # Exclude
+
+  # Skip
+  return 1
 }
 
 # =============================================================================
