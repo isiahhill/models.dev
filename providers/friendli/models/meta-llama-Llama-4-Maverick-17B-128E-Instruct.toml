@@ -1,7 +1,7 @@
 name = "Llama 4 Maverick 17B 128E Instruct"
 family = "llama-4"
 attachment = false
-reasoning = false
+reasoning = true
 tool_call = false
 structured_output = true
 temperature = true

@@ -70,20 +70,22 @@ function extractModelName(fullName: string): string {
     .replace(/\b\w/g, (l) => l.toUpperCase());
 }
 
+// TODO: Replace with functionality.parse_reasoning from API when available
 function isReasoningModel(modelId: string): boolean {
-  return /deepseek-r1|thinking/i.test(modelId);
-}
+  // Non-reasoning: Llama 3.x Instruct, Qwen3 Instruct
+  const nonReasoningPatterns = [
+    /llama-3\.\d.*instruct/i,
+    /qwen3.*instruct/i,
+  ];
 
-function determineOpenWeights(
-  huggingFaceUrl?: string,
-  license?: string,
-): boolean {
-  if (!huggingFaceUrl) return false;
-  // Check for open source licenses
-  const openLicenses = ["apache", "mit", "llama"];
-  return openLicenses.some((l) =>
-    license?.toLowerCase().includes(l),
-  );
+  for (const pattern of nonReasoningPatterns) {
+    if (pattern.test(modelId)) {
+      return false;
+    }
+  }
+
+  // Everything else is reasoning or hybrid reasoning
+  return true;
 }
 
 function formatNumber(n: number): string {
@@ -192,11 +194,7 @@ function mergeModel(
   const contextTokens = apiModel.context_length;
   const outputTokens = apiModel.max_completion_tokens;
 
-  // Determine open_weights from hugging_face_url and license
-  const openWeights = determineOpenWeights(
-    apiModel.hugging_face_url,
-    apiModel.license,
-  );
+  const openWeights = Boolean(apiModel.hugging_face_url);
 
   const merged: MergedModel = {
     // Always from API

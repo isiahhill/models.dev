@@ -1,7 +1,7 @@
 name = "Qwen3 30B A3B"
 family = "qwen3"
 attachment = false
-reasoning = false
+reasoning = true
 tool_call = true
 structured_output = true
 temperature = true
