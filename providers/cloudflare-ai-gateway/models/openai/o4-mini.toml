@@ -1,21 +1,24 @@
-name = "o4 mini"
+name = "o4-mini"
 family = "o4-mini"
 release_date = "2025-04-16"
 last_updated = "2025-04-16"
-attachment = false
-reasoning = false
-temperature = true
-tool_call = false
+attachment = true
+reasoning = true
+temperature = false
+knowledge = "2024-05"
+tool_call = true
+structured_output = true
 open_weights = false
 
 [cost]
-input = 1.1
-output = 4.4
+input = 1.10
+output = 4.40
+cache_read = 0.28
 
 [limit]
-context = 128000
-output = 16384
+context = 200_000
+output = 100_000
 
 [modalities]
-input = ["text"]
+input = ["text", "image"]
 output = ["text"]
