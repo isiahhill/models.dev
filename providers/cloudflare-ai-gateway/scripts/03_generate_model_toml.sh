@@ -156,8 +156,10 @@ while IFS= read -r MODEL_JSON; do
     # Convert cost per token to cost per million tokens
     # API returns cost per token, we need cost per 1M tokens
     # Treat negative or invalid costs as 0
+    # Note: jq outputs scientific notation with uppercase 'E', but bc requires lowercase 'e'
     if [[ "${COST_IN}" != "0" && "${COST_IN}" != "null" ]]; then
-      COST_IN_PER_M=$(echo "${COST_IN} * 1000000" | bc -l | sed 's/^\./0./' | sed 's/0*$//' | sed 's/\.$//')
+      COST_IN_BC=$(echo "${COST_IN}" | tr 'E' 'e')
+      COST_IN_PER_M=$(echo "${COST_IN_BC} * 1000000" | bc -l | sed 's/^\./0./' | sed 's/0*$//' | sed 's/\.$//')
       # If negative, set to 0
       if (( $(echo "${COST_IN_PER_M} < 0" | bc -l) )); then
         COST_IN_PER_M="0"
@@ -167,7 +169,8 @@ while IFS= read -r MODEL_JSON; do
     fi
     
     if [[ "${COST_OUT}" != "0" && "${COST_OUT}" != "null" ]]; then
-      COST_OUT_PER_M=$(echo "${COST_OUT} * 1000000" | bc -l | sed 's/^\./0./' | sed 's/0*$//' | sed 's/\.$//')
+      COST_OUT_BC=$(echo "${COST_OUT}" | tr 'E' 'e')
+      COST_OUT_PER_M=$(echo "${COST_OUT_BC} * 1000000" | bc -l | sed 's/^\./0./' | sed 's/0*$//' | sed 's/\.$//')
       # If negative, set to 0
       if (( $(echo "${COST_OUT_PER_M} < 0" | bc -l) )); then
         COST_OUT_PER_M="0"
