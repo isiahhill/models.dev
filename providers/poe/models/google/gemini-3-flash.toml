@@ -1,7 +1,6 @@
-name = "Gemini 2.5 Pro"
-family = "gemini-pro"
-release_date = "2025-02-05"
-last_updated = "2025-02-05"
+name = "gemini-3-flash"
+release_date = "2025-10-07"
+last_updated = "2025-10-07"
 attachment = true
 reasoning = true
 temperature = false
@@ -9,13 +8,13 @@ open_weights = false
 tool_call = true
 
 [cost]
-input = 0.87
-output = 7
-cache_read = 0.087
+input = 0.4
+output = 2.4
+cache_read = 0.04
 
 [limit]
-context = 1_065_535
-output = 65_535
+context = 1_048_576
+output = 65_536
 
 [modalities]
 input = ["text", "image", "video", "audio"]
