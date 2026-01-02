@@ -1,22 +1,30 @@
 name = "MiniMax M2"
-family = "minimax"
-release_date = "2025-10-27"
-last_updated = "2025-11-08"
+family = "minimaxai"
+release_date = "2025-12-29"
+last_updated = "2025-12-29"
 attachment = false
 reasoning = true
 temperature = true
-knowledge = "2024-10"
 tool_call = true
+structured_output = true
 open_weights = true
 
 [cost]
 input = 0.26
 output = 1.02
+reasoning = 1.53
+cache_read = 0.0
+cache_write = 0.0
+input_audio = 0.0
+output_audio = 0.0
 
 [limit]
-context = 196_608
-output = 196_608
+context = 196608
+output = 196608
 
 [modalities]
-input = ["text"]
-output = ["text"]
+input = ['text']
+output = ['text']
+
+[interleaved]
+field = "reasoning_content"
