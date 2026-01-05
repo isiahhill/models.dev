@@ -19,5 +19,5 @@ context = 1_048_576
 output = 64_000
 
 [modalities]
-input = ["document", "image", "text", "audio"]
+input = ["image", "text", "audio"]
 output = ["text"]
