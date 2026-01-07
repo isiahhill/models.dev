@@ -28,6 +28,7 @@ export const Model = z
     attachment: z.boolean(),
     reasoning: z.boolean(),
     tool_call: z.boolean(),
+    interleaved: z.boolean().optional(),
     structured_output: z.boolean().optional(),
     temperature: z.boolean().optional(),
     knowledge: z
