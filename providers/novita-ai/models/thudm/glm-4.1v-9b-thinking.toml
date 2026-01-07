@@ -1,0 +1,20 @@
+name = "GLM 4.1V 9B Thinking"
+release_date = "2025-07-09"
+last_updated = "2025-07-09"
+attachment = true
+reasoning = true
+temperature = true
+tool_call = false
+open_weights = true
+
+[cost]
+input = 0.035
+output = 0.138
+
+[limit]
+context = 65_536
+output = 8_000
+
+[modalities]
+input = ["text", "image"]
+output = ["text"]

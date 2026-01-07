@@ -1,0 +1,20 @@
+name = "zai-org/glm-4.5-air"
+release_date = "2025-10-13"
+last_updated = "2025-10-13"
+attachment = false
+reasoning = true
+temperature = true
+tool_call = true
+open_weights = true
+
+[cost]
+input = 0.13
+output = 0.85
+
+[limit]
+context = 131_072
+output = 98_304
+
+[modalities]
+input = ["text"]
+output = ["text"]

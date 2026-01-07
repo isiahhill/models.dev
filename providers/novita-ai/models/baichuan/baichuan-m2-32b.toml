@@ -1,0 +1,21 @@
+name = "baichuan-m2-32b"
+release_date = "2025-08-13"
+last_updated = "2025-08-13"
+attachment = false
+reasoning = true
+temperature = true
+tool_call = false
+structured_output = true
+open_weights = true
+
+[cost]
+input = 0.07
+output = 0.07
+
+[limit]
+context = 131072
+output = 131072
+
+[modalities]
+input = ["text"]
+output = ["text"]
