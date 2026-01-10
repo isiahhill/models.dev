@@ -1,7 +1,7 @@
 name = "InternVL3 78B TEE"
 family = "opengvlab"
 release_date = "2025-01-06"
-last_updated = "2025-01-06"
+last_updated = "2026-01-10"
 attachment = false
 reasoning = false
 temperature = true
@@ -10,14 +10,13 @@ structured_output = true
 open_weights = true
 
 [cost]
-input = 0.1
+input = 0.10
 output = 0.39
 
 [limit]
-context = 32768
-output = 32768
+context = 32_768
+output = 32_768
 
 [modalities]
-input = ['text', 'image']
-output = ['text']
-
+input = ["text", "image"]
+output = ["text"]

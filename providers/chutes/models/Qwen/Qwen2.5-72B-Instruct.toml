@@ -1,7 +1,7 @@
 name = "Qwen2.5 72B Instruct"
 family = "qwen"
 release_date = "2025-12-29"
-last_updated = "2025-12-29"
+last_updated = "2026-01-10"
 attachment = false
 reasoning = false
 temperature = true
@@ -12,15 +12,11 @@ open_weights = true
 [cost]
 input = 0.13
 output = 0.52
-cache_read = 0.0
-cache_write = 0.0
-input_audio = 0.0
-output_audio = 0.0
 
 [limit]
-context = 32768
-output = 32768
+context = 32_768
+output = 32_768
 
 [modalities]
-input = ['text']
-output = ['text']
+input = ["text"]
+output = ["text"]
