@@ -1,7 +1,7 @@
 name = "Qwen3 Coder 480B A35B Instruct FP8 TEE"
 family = "qwen"
 release_date = "2025-12-29"
-last_updated = "2025-12-29"
+last_updated = "2026-01-10"
 attachment = false
 reasoning = false
 temperature = true
@@ -12,15 +12,11 @@ open_weights = true
 [cost]
 input = 0.22
 output = 0.95
-cache_read = 0.0
-cache_write = 0.0
-input_audio = 0.0
-output_audio = 0.0
 
 [limit]
-context = 262144
-output = 262144
+context = 262_144
+output = 262_144
 
 [modalities]
-input = ['text']
-output = ['text']
+input = ["text"]
+output = ["text"]
