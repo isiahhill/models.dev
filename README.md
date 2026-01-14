@@ -109,7 +109,7 @@ output_audio = 10.00        # Cost per million audio output tokens (USD)
 
 [limit]
 context = 400_000           # Maximum context window (tokens)
-context = 272_000           # Maximum input tokens
+input = 272_000             # Maximum input tokens
 output = 8_192              # Maximum output tokens
 
 [modalities]
