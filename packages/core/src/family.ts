@@ -4,6 +4,7 @@ export const ModelFamilyValues = [
   // OpenAI/GPT style
   "gpt",
   "gpt-codex",
+  "gpt-codex-mini",
   "gpt-pro",
   "gpt-mini",
   "gpt-nano",
@@ -15,20 +16,25 @@ export const ModelFamilyValues = [
   "o-pro",
 
   // Anthropic style
+  "claude",
   "claude-haiku",
   "claude-sonnet",
   "claude-opus",
 
   // Gemini style
+  "gemini",
   "gemini-pro",
   "gemini-flash",
   "gemini-flash-lite",
+  "gemini-embedding",
 
   // GLM (zai)
   "glm",
   "glmv",
   "glm-air",
   "glm-flash",
+  "glm-free",
+  "glm-z",
 
   // Meta Llama
   "llama",
@@ -47,24 +53,291 @@ export const ModelFamilyValues = [
   "kimi",
   "kimi-thinking",
 
-  // TODO: Additional model families that need to be added:
-  // The following families are currently in use but not in the enum. Decisions needed on whether
-  // to add them as new families or map them to existing ones:
-  // 
-  // Embedding models: text-embedding-ada, text-embedding-3, text-embedding-3-small, 
-  //   text-embedding-3-large, gemini-embedding, glm-4-embed, cohere-embed, voyage-code, etc.
-  // 
-  // Mistral family: mistral, mistral-7b, mistral-large, mistral-medium, mistral-small, mistral-nemo,
-  //   ministral, ministral-3b, ministral-8b, ministral-14b, codestral, devstral, etc.
-  // 
-  // Other major models: gemma, gemma-2, gemma-3, grok, grok-2, grok-3, grok-4, grok-code, minimax,
-  //   nova, nova-pro, nova-lite, nova-micro, sora, etc.
-  //
-  // Specialized models: flux (image), imagen (image), dall-e-3 (image), whisper (audio), 
-  //   stable-diffusion (image), runway (video), etc.
-  //
-  // GLM variants still need mapping: glm-4, glm-4.5, glm-4.6, glm-4.7, glm-4-air, glm-4.5-air, 
-  //   glm-4.5-flash → should map to glm, glm-air, or glm-flash based on tier
+  // Mistral family
+  "mistral",
+  "mistral-large",
+  "mistral-medium",
+  "mistral-small",
+  "mistral-nemo",
+  "ministral",
+  "codestral",
+  "devstral",
+  "pixtral",
+  "mixtral",
+
+  // xAI Grok
+  "grok",
+  "grok-vision",
+  "grok-beta",
+
+  // Google Gemma
+  "gemma",
+
+  // AWS Nova
+  "nova",
+  "nova-pro",
+  "nova-lite",
+  "nova-micro",
+
+  // Cohere Command
+  "command",
+  "command-r",
+  "command-a",
+  "command-light",
+
+  // AI21 Jamba
+  "jamba",
+
+  // NVIDIA Nemotron
+  "nemotron",
+
+  // AWS Titan
+  "titan",
+  "titan-embed",
+
+  // MiniMax
+  "minimax",
+
+  // Hunyuan
+  "hunyuan",
+
+  // Yi
+  "yi",
+
+  // Granite
+  "granite",
+
+  // Reka
+  "reka",
+
+  // Sonar (Perplexity)
+  "sonar",
+  "sonar-pro",
+  "sonar-reasoning",
+  "sonar-deep-research",
+
+  // Solar
+  "solar",
+  "solar-mini",
+  "solar-pro",
+
+  // Exaone
+  "exaone",
+
+  // Step (StepFun)
+  "step",
+
+  // Embedding models
+  "text-embedding",
+  "cohere-embed",
+  "voyage",
+  "mistral-embed",
+  "bge",
+  "plamo",
+  "codestral-embed",
+
+  // Image generation
+  "dall-e",
+  "flux",
+  "imagen",
+  "stable-diffusion",
+  "ideogram",
+  "dreamshaper",
+
+  // Video generation
+  "sora",
+  "veo",
+  "runway",
+  "dream-machine",
+
+  // Audio/Speech
+  "whisper",
+  "elevenlabs",
+  "lyria",
+  "melotts",
+
+  // Baidu Ernie
+  "ernie",
+
+  // Hermes
+  "hermes",
+
+  // Zephyr
+  "zephyr",
+
+  // OpenChat
+  "openchat",
+
+  // Starling
+  "starling",
+
+  // Qwen QVQ
+  "qvq",
+
+  // Sherlock
+  "sherlock",
+
+  // Mercury
+  "mercury",
+
+  // Cogito
+  "cogito",
+
+  // Mimo
+  "mimo",
+
+  // Longcat
+  "longcat",
+
+  // Magistral
+  "magistral",
+  "magistral-small",
+  "magistral-medium",
+
+  // Phoenix
+  "phoenix",
+
+  // Trinity
+  "trinity",
+
+  // Lucid
+  "lucid",
+
+  // Intellect
+  "intellect",
+
+  // Aura (Stability AI)
+  "aura",
+
+  // JAIS
+  "jais",
+
+  // Sarvam
+  "sarvam",
+
+  // Falcon
+  "falcon",
+
+  // BART
+  "bart",
+
+  // DistilBERT
+  "distilbert",
+
+  // ResNet
+  "resnet",
+
+  // M2M100
+  "m2m",
+
+  // IndicTrans
+  "indictrans",
+
+  // LLaVA
+  "llava",
+
+  // Seed
+  "seed",
+
+  // Ray
+  "ray",
+
+  // T-Stars
+  "tstars",
+
+  // RNJ
+  "rnj",
+
+  // Ling & Ring (InclusionAI)
+  "ling",
+  "ring",
+
+  // Kat Coder
+  "kat-coder",
+
+  // SQL Coder
+  "sqlcoder",
+
+  // DiscoLM
+  "discolm",
+
+  // Osmosis
+  "osmosis",
+
+  // Parakeet
+  "parakeet",
+
+  // NeMo
+  "nemoretriever",
+
+
+
+  // Nano Banana
+  "nano-banana",
+
+  // Una Cybertron
+  "una-cybertron",
+
+  // Morph
+  "morph",
+
+  // Voxtral
+  "voxtral",
+
+  // Venice
+  "venice",
+
+  // Auto router
+  "auto",
+  "model-router",
+
+  // V0
+  "v0",
+
+  // Tako
+  "tako",
+
+  // MAI
+  "mai",
+
+  // RedNote
+  "rednote",
+
+  // Smart Turn
+  "smart-turn",
+
+  // Qwerky
+  "qwerky",
+
+  // Big Pickle
+  "big-pickle",
+
+  // Chutes AI
+  "chutesai",
+
+  // OpenGVLab
+  "opengvlab",
+
+  // TNG Tech
+  "tngtech",
+
+  // TopazLabs
+  "topazlabs",
+
+  // Unsloth
+  "unsloth",
+
+  // Nousresearch
+  "nousresearch",
+
+  // Alpha variants (experimental models)
+  "alpha",
+
+  // OSWE
+  "oswe",
+
+  // Neural Chat
+  "neural-chat",
 ] as const;
 
 export const ModelFamily = z.enum(ModelFamilyValues);

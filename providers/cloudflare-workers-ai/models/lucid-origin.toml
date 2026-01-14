@@ -1,7 +1,7 @@
 # https://developers.cloudflare.com/workers-ai/models/lucid-origin/
 
 name = "@cf/leonardo/lucid-origin"
-family = "lucid-origin"
+family = "lucid"
 attachment = false
 reasoning = false
 tool_call = false

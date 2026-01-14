@@ -1,5 +1,5 @@
 name = "xAI Grok 3"
-family = "grok-3"
+family = "grok"
 release_date = "2024-06-01"
 last_updated = "2024-06-01"
 attachment = false

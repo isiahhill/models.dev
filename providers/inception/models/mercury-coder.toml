@@ -1,5 +1,5 @@
 name = "Mercury Coder"
-family = "mercury-coder"
+family = "mercury"
 attachment = false     
 reasoning = false         
 tool_call = true      

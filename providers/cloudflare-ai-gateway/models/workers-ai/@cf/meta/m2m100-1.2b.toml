@@ -1,5 +1,5 @@
 name = "M2M100 1.2B"
-family = "m2m100"
+family = "m2m"
 release_date = "2025-04-03"
 last_updated = "2025-04-03"
 attachment = false

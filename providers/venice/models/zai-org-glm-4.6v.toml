@@ -1,5 +1,5 @@
 name = "GLM 4.6V"
-family = "glm-4.6"
+family = "glm"
 attachment = true
 reasoning = false
 tool_call = true

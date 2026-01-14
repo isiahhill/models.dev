@@ -1,5 +1,5 @@
 name = "Mistral 7B Instruct v0.1"
-family = "mistral-7b"
+family = "mistral"
 release_date = "2025-04-03"
 last_updated = "2025-04-03"
 attachment = false

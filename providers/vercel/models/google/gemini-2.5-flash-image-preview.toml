@@ -1,5 +1,5 @@
 name = "Nano Banana Preview (Gemini 2.5 Flash Image Preview)"
-family = "gemini-flash-image"
+family = "gemini-flash"
 release_date = "2025-03-20"
 last_updated = "2025-03-20"
 attachment = false

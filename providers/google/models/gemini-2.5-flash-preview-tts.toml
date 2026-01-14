@@ -1,5 +1,5 @@
 name = "Gemini 2.5 Flash Preview TTS"
-family = "gemini-flash-tts"
+family = "gemini-flash"
 release_date = "2025-05-01"
 last_updated = "2025-05-01"
 attachment = false

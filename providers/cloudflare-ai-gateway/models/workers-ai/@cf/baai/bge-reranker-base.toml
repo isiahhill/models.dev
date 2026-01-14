@@ -1,5 +1,5 @@
 name = "BGE Reranker Base"
-family = "bge-reranker"
+family = "bge"
 release_date = "2025-04-09"
 last_updated = "2025-04-09"
 attachment = false

@@ -1,5 +1,5 @@
 name = "llava-next-mistral-7b"
-family = "mistral-7b"
+family = "mistral"
 release_date = "2025-01-08"
 last_updated = "2025-01-08"
 attachment = true

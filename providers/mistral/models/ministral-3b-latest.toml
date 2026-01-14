@@ -1,5 +1,5 @@
 name = "Ministral 3B"
-family = "ministral-3b"
+family = "ministral"
 release_date = "2024-10-01"
 last_updated = "2024-10-04"
 attachment = false
