@@ -1,5 +1,5 @@
 name = "Gemma 3 27B"
-family = "gemma-3"
+family = "gemma"
 release_date = "2025-03-25"
 last_updated = "2025-03-25"
 attachment = true

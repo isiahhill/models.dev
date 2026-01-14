@@ -1,5 +1,5 @@
 name = "DeepSeek R1 Distill LLama 70B"
-family = "deepseek-r1"
+family = "deepseek-thinking"
 release_date = "2025-01-27"
 last_updated = "2025-01-27"
 attachment = false

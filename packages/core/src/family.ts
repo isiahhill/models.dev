@@ -218,6 +218,12 @@ export const ModelFamilyValues = [
   // Falcon
   "falcon",
 
+  // Baichuan
+  "baichuan",
+
+  // Skywork
+  "skywork",
+
   // BART
   "bart",
 
