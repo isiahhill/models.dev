@@ -1,4 +1,6 @@
 name = "Doubao 1.5 Vision Pro"
+release_date = "2025-08-05"
+last_updated = "2025-08-05"
 attachment = true
 reasoning = false
 tool_call = false

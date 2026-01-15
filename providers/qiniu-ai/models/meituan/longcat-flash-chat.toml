@@ -1,4 +1,6 @@
 name = "Meituan/Longcat-Flash-Chat"
+release_date = "2025-11-05"
+last_updated = "2025-11-05"
 attachment = false
 reasoning = false
 tool_call = false

@@ -1,4 +1,6 @@
 name = "Kimi K2 0905"
+release_date = "2025-09-08"
+last_updated = "2025-09-08"
 attachment = false
 reasoning = false
 tool_call = true

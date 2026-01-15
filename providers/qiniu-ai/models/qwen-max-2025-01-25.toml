@@ -1,4 +1,6 @@
 name = "Qwen2.5-Max-2025-01-25"
+release_date = "2025-08-05"
+last_updated = "2025-08-05"
 attachment = false
 reasoning = false
 tool_call = true

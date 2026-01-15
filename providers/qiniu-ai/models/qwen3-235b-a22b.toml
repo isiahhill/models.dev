@@ -1,4 +1,6 @@
 name = "Qwen 3 235B A22B"
+release_date = "2025-08-05"
+last_updated = "2025-08-05"
 attachment = false
 reasoning = false
 tool_call = true

@@ -1,4 +1,6 @@
 name = "Qwen 2.5 VL 7B Instruct"
+release_date = "2025-08-05"
+last_updated = "2025-08-05"
 attachment = true
 reasoning = false
 tool_call = true

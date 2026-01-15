@@ -1,4 +1,6 @@
 name = "Minimax/Minimax-M2"
+release_date = "2025-10-28"
+last_updated = "2025-10-28"
 attachment = false
 reasoning = true
 tool_call = true

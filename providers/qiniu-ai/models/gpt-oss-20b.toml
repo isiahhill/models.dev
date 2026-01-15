@@ -1,4 +1,6 @@
 name = "gpt-oss-20b"
+release_date = "2025-08-06"
+last_updated = "2025-08-06"
 attachment = false
 reasoning = true
 tool_call = true

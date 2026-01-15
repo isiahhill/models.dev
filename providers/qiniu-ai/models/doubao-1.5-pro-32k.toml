@@ -1,4 +1,6 @@
 name = "Doubao 1.5 Pro 32k"
+release_date = "2025-08-05"
+last_updated = "2025-08-05"
 attachment = false
 reasoning = false
 tool_call = true

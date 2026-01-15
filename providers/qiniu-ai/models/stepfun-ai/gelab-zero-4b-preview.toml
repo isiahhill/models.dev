@@ -1,4 +1,6 @@
 name = "Stepfun-Ai/Gelab Zero 4b Preview"
+release_date = "2025-12-23"
+last_updated = "2025-12-23"
 attachment = true
 reasoning = false
 tool_call = true

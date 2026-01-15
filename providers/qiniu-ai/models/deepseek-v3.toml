@@ -1,4 +1,6 @@
 name = "DeepSeek-V3"
+release_date = "2025-08-13"
+last_updated = "2025-08-13"
 attachment = false
 reasoning = false
 tool_call = false
