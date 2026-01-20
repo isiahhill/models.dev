@@ -1,4 +1,4 @@
-name = "MiniMax Coding Plan (api.minimax.io)"
+name = "MiniMax Coding Plan (minimax.io)"
 env = ["MINIMAX_API_KEY"]
 npm = "@ai-sdk/anthropic"
 doc = "https://platform.minimax.io/docs/coding-plan/intro"
