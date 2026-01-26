@@ -1,5 +1,5 @@
 name = "Llama 3.2 1B Instruct"
-family = "llama-3.2"
+family = "llama"
 release_date = "2025-04-03"
 last_updated = "2025-04-03"
 attachment = false

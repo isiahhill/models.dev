@@ -1,5 +1,5 @@
 name = "Qwen3 235B A22B Thinking"
-family = "qwen3"
+family = "qwen"
 release_date = "2025-07-25"
 last_updated = "2025-07-25"
 attachment = false

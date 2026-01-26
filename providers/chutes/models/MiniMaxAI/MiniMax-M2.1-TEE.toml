@@ -1,5 +1,5 @@
 name = "MiniMax M2.1 TEE"
-family = "minimaxai"
+family = "minimax"
 release_date = "2025-12-29"
 last_updated = "2026-01-10"
 attachment = false

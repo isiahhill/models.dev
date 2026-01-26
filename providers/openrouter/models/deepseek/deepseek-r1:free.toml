@@ -1,5 +1,5 @@
 name = "R1 (free)"
-family = "deepseek-r1"
+family = "deepseek"
 release_date = "2025-01-20"
 last_updated = "2025-01-20"
 attachment = false

@@ -1,5 +1,5 @@
 name = "Llama 4 Scout 17B 16E Instruct"
-family = "llama-4-scout"
+family = "llama"
 release_date = "2025-04-16"
 last_updated = "2025-04-16"
 attachment = false

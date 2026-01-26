@@ -1,5 +1,5 @@
 name = "Qwen 3 Next 80b"
-family = "qwen3"
+family = "qwen"
 attachment = false
 reasoning = false
 tool_call = true

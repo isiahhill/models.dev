@@ -1,5 +1,5 @@
 name = "Gemini 2.5 Flash Image"
-family = "gemini-flash-image"
+family = "gemini-flash"
 release_date = "2025-08-26"
 last_updated = "2025-08-26"
 attachment = true

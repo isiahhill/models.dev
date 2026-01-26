@@ -1,5 +1,5 @@
 name = "Qwen Plus Character (Japanese)"
-family = "qwen-plus"
+family = "qwen"
 release_date = "2024-01"
 last_updated = "2024-01"
 attachment = false

@@ -1,5 +1,5 @@
 name = "Qwen2.5 VL 72B Instruct (free)"
-family = "qwen2.5-vl"
+family = "qwen"
 release_date = "2025-02-01"
 last_updated = "2025-02-01"
 attachment = true

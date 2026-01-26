@@ -1,7 +1,7 @@
 # https://developers.cloudflare.com/workers-ai/models/llava-1.5-7b-hf/
 
 name = "@cf/llava-hf/llava-1.5-7b-hf"
-family = "llava-1.5-7b-hf"
+family = "llava"
 attachment = true
 reasoning = false
 tool_call = false

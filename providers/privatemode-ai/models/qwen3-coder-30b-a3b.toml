@@ -1,5 +1,5 @@
 name = "Qwen3-Coder 30B-A3B"
-family = "qwen3-coder"
+family = "qwen"
 attachment = false
 reasoning = false
 structured_output = true

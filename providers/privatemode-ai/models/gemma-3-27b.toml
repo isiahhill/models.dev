@@ -1,5 +1,5 @@
 name = "Gemma 3 27B"
-family = "gemma-3"
+family = "gemma"
 attachment = true
 reasoning = false
 structured_output = true

@@ -1,5 +1,5 @@
 name = "OpenAI GPT OSS 120B"
-family = "openai-gpt-oss"
+family = "gpt-oss"
 attachment = false
 reasoning = false
 tool_call = true

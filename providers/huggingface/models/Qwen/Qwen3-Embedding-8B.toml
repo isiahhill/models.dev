@@ -1,5 +1,5 @@
 name = "Qwen 3 Embedding 8B"
-family = "qwen3"
+family = "qwen"
 release_date = "2025-01-01"
 last_updated = "2025-01-01"
 attachment = false

@@ -1,5 +1,5 @@
 name = "Qwen-VL Max"
-family = "qwen-vl"
+family = "qwen"
 release_date = "2024-04-08"
 last_updated = "2025-08-13"
 attachment = false

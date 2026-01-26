@@ -1,5 +1,5 @@
 name = "GLM 4.7"
-family = "glm-4.7"
+family = "glm"
 attachment = false
 reasoning = true
 tool_call = true
@@ -23,4 +23,4 @@ input = ["text"]
 output = ["text"]
 
 [interleaved]
-field = "reasoning_details"
+field = "reasoning_content"

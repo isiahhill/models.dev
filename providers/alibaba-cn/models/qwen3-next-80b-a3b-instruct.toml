@@ -1,5 +1,5 @@
 name = "Qwen3-Next 80B-A3B Instruct"
-family = "qwen3"
+family = "qwen"
 release_date = "2025-09"
 last_updated = "2025-09"
 attachment = false

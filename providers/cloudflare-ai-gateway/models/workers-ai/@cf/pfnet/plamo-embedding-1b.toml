@@ -1,5 +1,5 @@
 name = "PLaMo Embedding 1B"
-family = "plamo-embedding"
+family = "plamo"
 release_date = "2025-09-25"
 last_updated = "2025-09-25"
 attachment = false

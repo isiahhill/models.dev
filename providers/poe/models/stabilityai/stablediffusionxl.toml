@@ -1,5 +1,5 @@
 name = "StableDiffusionXL"
-family = "stablediffusionxl"
+family = "stable-diffusion"
 release_date = "2023-07-09"
 last_updated = "2023-07-09"
 attachment = true

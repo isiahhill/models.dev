@@ -1,5 +1,5 @@
 name = "NVIDIA Nemotron 3 Nano 30B A3B BF16"
-family = "nvidia"
+family = "nemotron"
 release_date = "2025-12-29"
 last_updated = "2026-01-10"
 attachment = false

@@ -1,5 +1,5 @@
 name = "Qwen 3 235B A22B Thinking 2507"
-family = "qwen3"
+family = "qwen"
 attachment = false
 reasoning = true
 tool_call = true
@@ -21,3 +21,6 @@ output = 32_768
 [modalities]
 input = ["text"]
 output = ["text"]
+
+[interleaved]
+field = "reasoning_content"

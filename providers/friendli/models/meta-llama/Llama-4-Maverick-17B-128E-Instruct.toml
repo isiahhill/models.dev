@@ -1,5 +1,5 @@
 name = "Llama 4 Maverick 17B 128E Instruct"
-family = "llama-4"
+family = "llama"
 attachment = false
 reasoning = true
 tool_call = false

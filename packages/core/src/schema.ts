@@ -1,5 +1,7 @@
 import { z } from "zod";
 
+import { ModelFamily } from "./family";
+
 const Cost = z.object({
   input: z.number().min(0, "Input price cannot be negative"),
   output: z.number().min(0, "Output price cannot be negative"),
@@ -25,7 +27,7 @@ export const Model = z
   .object({
     id: z.string(),
     name: z.string().min(1, "Model name cannot be empty"),
-    family: z.string().optional(),
+    family: ModelFamily.optional(),
     attachment: z.boolean(),
     reasoning: z.boolean(),
     tool_call: z.boolean(),
@@ -121,7 +123,11 @@ export const Provider = z
         // openai: api optional (always allowed)
         isOpenAI ||
         // all others: must NOT have api
-        (!isOpenAI && !isOpenAIcompatible && !isOpenrouter && !isAnthropic && !hasApi)
+        (!isOpenAI &&
+          !isOpenAIcompatible &&
+          !isOpenrouter &&
+          !isAnthropic &&
+          !hasApi)
       );
     },
     {

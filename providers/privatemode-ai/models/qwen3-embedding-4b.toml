@@ -1,5 +1,5 @@
 name = "Qwen3-Embedding 4B"
-family = "qwen3-embedding"
+family = "qwen"
 attachment = false
 reasoning = false
 structured_output = false

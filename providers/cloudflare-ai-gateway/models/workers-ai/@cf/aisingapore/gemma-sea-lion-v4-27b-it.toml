@@ -1,5 +1,5 @@
 name = "Gemma SEA-LION v4 27B IT"
-family = "gemma-sea-lion"
+family = "gemma"
 release_date = "2025-09-25"
 last_updated = "2025-09-25"
 attachment = false
