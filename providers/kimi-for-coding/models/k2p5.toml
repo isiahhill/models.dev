@@ -7,7 +7,7 @@ reasoning = true
 structured_output = true
 temperature = true
 tool_call = true
-knowledge = "2026-01"
+knowledge = "2025-01"
 open_weights = true
 
 [cost]
