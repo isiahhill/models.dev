@@ -1,21 +1,20 @@
-name = "Qwen3 235B A22B Instruct 2507"
-family = "qwen"
+name = "MiniMax M2.1"
 attachment = false
-reasoning = false
+reasoning = true
 tool_call = true
 structured_output = true
 temperature = true
-release_date = "2025-07-29"
+release_date = "2026-01-13"
 last_updated = "2026-01-29"
 open_weights = true
 
 [cost]
-input = 0.2
-output = 0.8
+input = 0.3
+output = 1.2
 
 [limit]
-context = 262_144
-output = 262_144
+context = 196_608
+output = 196_608
 
 [modalities]
 input = ["text"]
