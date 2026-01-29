@@ -6,7 +6,7 @@ tool_call = true
 structured_output = true
 temperature = true
 release_date = "2026-01-16"
-last_updated = "2026-01-19"
+last_updated = "2026-01-28"
 open_weights = true
 
 [cost]
@@ -14,8 +14,8 @@ input = 0.25
 output = 1.5
 
 [limit]
-context = 262_144
-output = 65_536
+context = 256_000
+output = 64_000
 
 [modalities]
 input = ["text", "image"]
