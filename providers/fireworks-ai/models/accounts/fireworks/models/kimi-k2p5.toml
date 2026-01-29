@@ -16,7 +16,7 @@ output = 3.00
 
 [limit]
 context = 256_000
-output = 32_768
+output = 256_000
 
 [modalities]
 input = ["text", "image", "video"]
