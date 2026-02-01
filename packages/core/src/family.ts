@@ -352,6 +352,15 @@ export const ModelFamilyValues = [
 
   // Pangu (Ascend Tribe)
   "pangu",
+
+  // LiquidAI
+  "liquid",
+
+  // Sourceful
+  "sourceful",
+
+  // AllenAI
+  "allenai"
 ] as const;
 
 export const ModelFamily = z.enum(ModelFamilyValues);
