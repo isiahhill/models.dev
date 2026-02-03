@@ -7,7 +7,7 @@ reasoning = false
 temperature = true
 # may be inaccurate
 knowledge = "2025-06"
-tool_call = true
+tool_call = false
 open_weights = true
 
 [cost]
