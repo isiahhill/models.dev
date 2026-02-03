@@ -7,7 +7,7 @@ import {
 } from "@aws-sdk/client-bedrock-runtime";
 import { generate } from "../src/generate.js";
 
-const REGIONS = ["us-west-2", "us-east-1", "eu-central-1"] as const;
+const REGIONS = ["us-west-2", "us-east-1", "eu-central-1", "ap-southeast-1"] as const;
 const CONCURRENCY = 3;
 const MAX_ATTEMPTS = 3;
 
@@ -164,9 +164,17 @@ async function main() {
     process.exit(1);
   }
 
-  const modelIds = Object.keys(bedrock.models).sort();
+  const allModelIds = Object.keys(bedrock.models).sort();
+  
+  // Filter out gov cloud models (us-gov.*) as they require special access
+  const govCloudModels = allModelIds.filter(id => id.startsWith("us-gov."));
+  const modelIds = allModelIds.filter(id => !id.startsWith("us-gov."));
 
-  console.log(`Found ${modelIds.length} models to validate via inference`);
+  console.log(`Found ${allModelIds.length} models total`);
+  if (govCloudModels.length > 0) {
+    console.log(`Skipping ${govCloudModels.length} gov cloud models: ${govCloudModels.join(", ")}`);
+  }
+  console.log(`Testing ${modelIds.length} models via inference`);
   console.log(`Testing against regions: ${REGIONS.join(", ")}`);
   console.log(`Concurrency: ${CONCURRENCY}, Max attempts: ${MAX_ATTEMPTS}`);
   console.log(`\n⚠️  This will make actual API calls (minimal token usage)\n`);
