@@ -6,7 +6,7 @@ attachment = false
 reasoning = true
 temperature = true
 knowledge = "2023-12"
-tool_call = true
+tool_call = false
 open_weights = true
 
 [cost]
