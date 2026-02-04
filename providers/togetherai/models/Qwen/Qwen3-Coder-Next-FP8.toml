@@ -1,4 +1,4 @@
-name = "Qwen3 Coder Next"
+name = "Qwen3 Coder Next FP8"
 family = "qwen"
 release_date = "2026-02-03"
 last_updated = "2026-02-03"
