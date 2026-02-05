@@ -27,3 +27,31 @@
 - Prefix unused variables with underscore or use `_` for ignored parameters
 - Handle undefined values explicitly in comparisons and sorting
 - Use optional chaining (`?.`) and nullish coalescing (`??`) for safe property access
+
+## Model Configuration
+
+- Model `id` is **auto-injected** from filename (minus `.toml`) — never put `id` in TOML files
+- Same model is duplicated across provider directories with no cross-referencing
+- Schema uses `.strict()` — extra fields cause validation errors
+
+### Bedrock Naming Patterns
+- Dated models: `-v1:0` suffix (`anthropic.claude-3-5-sonnet-20241022-v1:0.toml`)
+- Latest/undated models: bare `-v1` (`anthropic.claude-opus-4-6-v1.toml`)
+- Region prefixes: `us.`, `eu.`, `global.` (default has no prefix)
+
+### Vertex AI Naming Patterns
+- Dated models: `@YYYYMMDD` (`claude-opus-4-5@20251101.toml`)
+- Latest/undated models: `@default` (`claude-opus-4-6@default.toml`)
+
+### Cost Schema
+- `cost.context_over_200k` is a nested `Cost` object for >200K token pricing
+- Cache pricing ratios: standard models use 10%/125% (read/write), regional variants may use 30%/375%
+
+### Required vs Optional Fields
+| Field | Required? | Notes |
+|-------|-----------|-------|
+| `name`, `release_date`, `last_updated` | Yes | Human-readable metadata |
+| `attachment`, `reasoning`, `tool_call`, `open_weights` | Yes | Boolean capabilities |
+| `cost`, `limit`, `modalities` | Yes | Objects with their own required fields |
+| `family`, `knowledge`, `temperature`, `structured_output` | No | Optional metadata |
+| `status` | No | Use for `"alpha"`, `"beta"`, `"deprecated"` lifecycle |
