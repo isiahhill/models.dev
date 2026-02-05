@@ -41,7 +41,7 @@
 
 ### Vertex AI Naming Patterns
 - Dated models: `@YYYYMMDD` (`claude-opus-4-5@20251101.toml`)
-- Latest/undated models: bare name (`claude-opus-4-6.toml`)
+- Latest/undated models: `@default` (`claude-opus-4-6@default.toml`)
 
 ### Cost Schema
 - `cost.context_over_200k` is a nested `Cost` object for >200K token pricing
