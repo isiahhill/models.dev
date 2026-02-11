@@ -1,7 +1,7 @@
 name = "Kimi K2.5 Thinking"
 family = "kimi"
 release_date = "2026-01-26"
-last_updated = "2026-02-11"
+last_updated = "2026-01-26"
 attachment = true
 reasoning = true
 temperature = true
