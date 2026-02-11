@@ -17,7 +17,6 @@ cache_write = 0.0
 
 [limit]
 context = 162_816
-input   = 162_816
 output = 8_000
 
 [modalities]
