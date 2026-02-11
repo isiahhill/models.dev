@@ -1,6 +1,6 @@
 name = "Gemini 2.5 Flash Lite"
-release_date = "2025-08-14"
-last_updated = "2025-08-14"
+release_date = "2025-07-22"
+last_updated = "2025-07-22"
 attachment = true
 reasoning = false
 temperature = true
@@ -15,9 +15,9 @@ cache_read = 0.03
 cache_write = 1.00
 
 [limit]
-context = 1_048_576
+context = 1048_000
 output = 64_000
 
 [modalities]
-input = ["image", "text", "audio"]
+input = ["pdf", "image", "text", "audio"]
 output = ["text"]

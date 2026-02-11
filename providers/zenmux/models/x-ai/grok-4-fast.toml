@@ -1,6 +1,6 @@
 name = "Grok 4 Fast"
-release_date = "2025-09-22"
-last_updated = "2025-09-22"
+release_date = "2025-09-19"
+last_updated = "2025-09-19"
 attachment = true
 reasoning = true
 temperature = true
@@ -14,7 +14,7 @@ output = 0.50
 cache_read = 0.05
 
 [limit]
-context = 2_000_000
+context = 2000_000
 output = 64_000
 
 [modalities]

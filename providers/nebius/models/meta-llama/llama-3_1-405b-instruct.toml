@@ -1,21 +1,25 @@
-name = "Llama 3.1 405B Instruct"
-family = "llama"
-release_date = "2024-07-23"
-last_updated = "2025-10-04"
+name = "Llama-3.1-405B-Instruct"
 attachment = false
-reasoning = true
-temperature = true
-knowledge = "2024-03"
+reasoning = false
 tool_call = true
-open_weights = false
+structured_output = true
+temperature = true
+knowledge = "2024-12"
+release_date = "2025-01-20"
+last_updated = "2026-02-04"
+open_weights = true
+status = "deprecated"
 
 [cost]
 input = 1.00
 output = 3.00
+cache_read = 0.10
+cache_write = 1.25
 
 [limit]
-context = 131072
-output = 8192
+context = 131_072
+input = 124_000
+output = 8_192
 
 [modalities]
 input = ["text"]

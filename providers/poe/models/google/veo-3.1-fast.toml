@@ -13,5 +13,5 @@ context = 480
 output = 0
 
 [modalities]
-input = ["text"]
+input = ["text", "image"]
 output = ["video"]

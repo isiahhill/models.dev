@@ -15,9 +15,9 @@ cache_read = 0.20
 cache_write = 4.50
 
 [limit]
-context = 1_048_576
+context = 1048_000
 output = 64_000
 
 [modalities]
-input = ["text", "image", "audio", "video"]
+input = ["text", "image", "pdf", "audio", "video"]
 output = ["text"]

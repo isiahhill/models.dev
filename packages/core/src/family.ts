@@ -55,6 +55,7 @@ export const ModelFamilyValues = [
 
   // Moonshot Kimi
   "kimi",
+  "kimi-free",
   "kimi-thinking",
 
   // Mistral family
@@ -101,6 +102,7 @@ export const ModelFamilyValues = [
 
   // MiniMax
   "minimax",
+  "minimax-free",
 
   // Hunyuan
   "hunyuan",
@@ -181,6 +183,10 @@ export const ModelFamilyValues = [
 
   // Sherlock
   "sherlock",
+
+  // Pony
+  "pony",
+
 
   // Mercury
   "mercury",
@@ -350,6 +356,15 @@ export const ModelFamilyValues = [
 
   // Pangu (Ascend Tribe)
   "pangu",
+
+  // LiquidAI
+  "liquid",
+
+  // Sourceful
+  "sourceful",
+
+  // AllenAI
+  "allenai"
 ] as const;
 
 export const ModelFamily = z.enum(ModelFamilyValues);

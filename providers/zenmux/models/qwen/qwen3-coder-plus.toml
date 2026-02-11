@@ -1,6 +1,6 @@
 name = "Qwen3-Coder-Plus"
-release_date = "2025-09-10"
-last_updated = "2025-09-10"
+release_date = "2025-07-23"
+last_updated = "2025-07-23"
 attachment = false
 reasoning = false
 temperature = true
@@ -15,7 +15,7 @@ cache_read = 0.10
 cache_write = 1.25
 
 [limit]
-context = 1_000_000
+context = 1000_000
 output = 64_000
 
 [modalities]

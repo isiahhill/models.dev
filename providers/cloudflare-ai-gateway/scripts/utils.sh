@@ -42,6 +42,7 @@ WELL_KNOWN_MODELS=(
   # Anthropic - canonical names only, no dated versions or duplicates
   # API uses BOTH dots and hyphens: claude-3.5-sonnet AND claude-3-5-sonnet
   "anthropic/claude-sonnet-4-5$"
+  "anthropic/claude-opus-4-6$"
   "anthropic/claude-opus-4-5$"
   "anthropic/claude-haiku-4-5$"
   "anthropic/claude-opus-4-1$"
@@ -68,6 +69,7 @@ get_mapped_name() {
   case "${normalized_name}" in
     # Anthropic mappings - map to source file names with date suffixes
     "claude-sonnet-4-5") echo "claude-sonnet-4-5" ;;
+    "claude-opus-4-6") echo "claude-opus-4-6" ;;
     "claude-opus-4-5") echo "claude-opus-4-5" ;;
     "claude-haiku-4-5") echo "claude-haiku-4-5" ;;
     "claude-opus-4-1") echo "claude-opus-4-1" ;;

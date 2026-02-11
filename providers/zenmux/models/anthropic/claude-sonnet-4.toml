@@ -1,6 +1,6 @@
 name = "Claude Sonnet 4"
-release_date = "2025-08-13"
-last_updated = "2025-08-13"
+release_date = "2025-05-22"
+last_updated = "2025-05-22"
 attachment = true
 reasoning = true
 temperature = true
@@ -15,9 +15,9 @@ cache_read = 0.30
 cache_write = 3.75
 
 [limit]
-context = 1_000_000
+context = 1000_000
 output = 64_000
 
 [modalities]
-input = ["image", "text"]
+input = ["image", "text", "pdf"]
 output = ["text"]

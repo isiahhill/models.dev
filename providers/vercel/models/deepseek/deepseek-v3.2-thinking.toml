@@ -9,6 +9,8 @@ tool_call = true
 open_weights = false
 knowledge = "2024-07"
 
+interleaved = true
+
 [cost]
 input = 0.28
 output = 0.42

@@ -1,6 +1,6 @@
 name = "Step-3"
-release_date = "2025-12-18"
-last_updated = "2025-12-18"
+release_date = "2025-07-31"
+last_updated = "2025-07-31"
 attachment = true
 reasoning = true
 temperature = true
@@ -13,7 +13,7 @@ input = 0.21
 output = 0.57
 
 [limit]
-context = 65_536
+context = 65536
 output = 64_000
 
 [modalities]

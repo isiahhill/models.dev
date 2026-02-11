@@ -1,5 +1,4 @@
 name = "Kimi K2 Thinking Turbo"
-family = "kimi-thinking"
 release_date = "2025-11-06"
 last_updated = "2025-11-06"
 attachment = false
@@ -15,7 +14,7 @@ output = 8.00
 cache_read = 0.15
 
 [limit]
-context = 262_144
+context = 262_000
 output = 64_000
 
 [modalities]

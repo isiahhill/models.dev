@@ -61,6 +61,7 @@ const ModelSpec = z
     name: z.string(),
     modelSource: z.string().optional(),
     offline: z.boolean().optional(),
+    privacy: z.string().optional(),
     traits: z.array(z.string()).optional(),
   })
   .passthrough();
@@ -231,29 +232,28 @@ function mergeModel(
   const caps = spec.capabilities;
 
   const contextTokens = spec.availableContextTokens;
-  const outputTokens = Math.floor(contextTokens / 4);
+  const proposedOutputTokens = Math.floor(contextTokens / 4);
+  const outputTokens =
+    existing?.limit?.output !== undefined && existing.limit.output < proposedOutputTokens
+      ? existing.limit.output
+      : proposedOutputTokens
 
-  // Determine open_weights from modelSource
   const openWeights = spec.modelSource
     ? spec.modelSource.toLowerCase().includes("huggingface")
-    : false;
+    : spec.privacy === "private";
 
-  // Build input modalities from API (no auto-PDF)
   const inputModalities = buildInputModalities(caps);
 
-  // Check if existing has PDF in modalities - preserve it
   if (existing?.modalities?.input?.includes("pdf") && !inputModalities.includes("pdf")) {
     inputModalities.push("pdf");
   }
 
-  // Determine attachment based on vision/audio/video support
   const attachment =
     caps.supportsVision === true ||
     caps.supportsAudioInput === true ||
     caps.supportsVideoInput === true;
 
   const merged: MergedModel = {
-    // Always from API
     name: spec.name,
     attachment,
     reasoning: caps.supportsReasoning === true,
