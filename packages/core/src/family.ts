@@ -365,6 +365,9 @@ export const ModelFamilyValues = [
 
   // AllenAI
   "allenai",
+
+  // Writer
+  "palmyra",
 ] as const;
 
 export const ModelFamily = z.enum(ModelFamilyValues);
