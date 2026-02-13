@@ -9,6 +9,9 @@ tool_call = true
 structured_output = true
 open_weights = false
 
+[interleaved]
+field = "reasoning_content"
+
 [cost]
 input = 1
 output = 3.20
