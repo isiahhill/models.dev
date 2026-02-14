@@ -1,5 +1,4 @@
 name = "Aurora Alpha"
-family = "aurora"
 release_date = "2026-02-09"
 last_updated = "2026-02-09"
 attachment = false
@@ -19,3 +18,4 @@ output = 50_000
 [modalities]
 input = ["text"]
 output = ["text"]
+
