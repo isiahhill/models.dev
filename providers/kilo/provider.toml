@@ -1,0 +1,4 @@
+name = "Kilo Gateway"
+env = ["KILO_API_KEY"]
+npm = "opencode-kilo-auth"
+doc = "https://kilo.ai"
