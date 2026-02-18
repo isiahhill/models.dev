@@ -1,6 +1,7 @@
 name = "DeepSeek V3.1 Thinking"
-release_date = "2024-01-01"
-last_updated = "2024-01-01"
+family = "deepseek-ai"
+release_date = "2025-08-21"
+last_updated = "2025-08-21"
 attachment = false
 reasoning = false
 tool_call = false

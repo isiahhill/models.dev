@@ -1,6 +1,7 @@
 name = "GPT-4o Search Preview"
-release_date = "2024-01-01"
-last_updated = "2024-01-01"
+family = "openai"
+release_date = "2024-05-13"
+last_updated = "2024-05-13"
 attachment = true
 reasoning = false
 tool_call = false

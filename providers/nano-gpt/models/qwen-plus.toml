@@ -1,6 +1,6 @@
 name = "Qwen Plus"
-release_date = "2024-01-01"
-last_updated = "2024-01-01"
+release_date = "2024-01-25"
+last_updated = "2024-01-25"
 attachment = false
 reasoning = true
 tool_call = false

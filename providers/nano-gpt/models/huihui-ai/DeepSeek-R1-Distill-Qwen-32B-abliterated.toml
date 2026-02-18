@@ -1,6 +1,7 @@
 name = "DeepSeek R1 Qwen Abliterated"
-release_date = "2024-01-01"
-last_updated = "2024-01-01"
+family = "huihui-ai"
+release_date = "2025-01-20"
+last_updated = "2025-01-20"
 attachment = false
 reasoning = true
 tool_call = false

@@ -1,4 +1,5 @@
 name = "ERNIE 4.5 300B"
+family = "baidu"
 release_date = "2025-06-30"
 last_updated = "2025-06-30"
 attachment = false

@@ -1,6 +1,7 @@
 name = "Nemotron 3.1 70B abliterated"
-release_date = "2024-01-01"
-last_updated = "2024-01-01"
+family = "huihui-ai"
+release_date = "2024-07-23"
+last_updated = "2024-07-23"
 attachment = false
 reasoning = false
 tool_call = false

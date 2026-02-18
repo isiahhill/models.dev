@@ -1,6 +1,7 @@
 name = "ERNIE 4.5 VL 28B"
-release_date = "2024-01-01"
-last_updated = "2024-01-01"
+family = "baidu"
+release_date = "2025-06-30"
+last_updated = "2025-06-30"
 attachment = true
 reasoning = false
 tool_call = false
@@ -8,8 +9,8 @@ structured_output = false
 open_weights = false
 
 [cost]
-input = 0.14
-output = 0.56
+input = 0.13999999999999999
+output = 0.5599999999999999
 
 [limit]
 context = 32_768

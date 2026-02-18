@@ -1,5 +1,6 @@
 name = "GPT-4 Turbo Preview"
-release_date = "2024-01-01"
+family = "openai"
+release_date = "2023-11-06"
 last_updated = "2024-01-01"
 attachment = false
 reasoning = false
@@ -9,7 +10,7 @@ open_weights = false
 
 [cost]
 input = 9.996
-output = 30.005
+output = 30.004999999999995
 
 [limit]
 context = 128_000

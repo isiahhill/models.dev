@@ -1,6 +1,7 @@
 name = "Trinity Large"
-release_date = "2024-01-01"
-last_updated = "2024-01-01"
+family = "arcee-ai"
+release_date = "2025-12-01"
+last_updated = "2025-12-01"
 attachment = false
 reasoning = false
 tool_call = false

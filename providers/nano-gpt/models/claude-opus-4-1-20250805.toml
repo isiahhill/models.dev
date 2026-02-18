@@ -1,6 +1,6 @@
 name = "Claude 4.1 Opus"
-release_date = "2024-01-01"
-last_updated = "2024-01-01"
+release_date = "2025-08-05"
+last_updated = "2025-08-05"
 attachment = true
 reasoning = false
 tool_call = true

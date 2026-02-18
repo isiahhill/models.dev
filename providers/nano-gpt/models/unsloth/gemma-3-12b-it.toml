@@ -1,6 +1,7 @@
 name = "Gemma 3 12B IT"
-release_date = "2024-01-01"
-last_updated = "2024-01-01"
+family = "unsloth"
+release_date = "2025-03-10"
+last_updated = "2025-03-10"
 attachment = true
 reasoning = false
 tool_call = false

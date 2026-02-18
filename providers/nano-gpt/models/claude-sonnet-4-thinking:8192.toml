@@ -1,6 +1,6 @@
 name = "Claude 4 Sonnet Thinking (8K)"
-release_date = "2024-01-01"
-last_updated = "2024-01-01"
+release_date = "2025-05-22"
+last_updated = "2025-05-22"
 attachment = true
 reasoning = true
 tool_call = true

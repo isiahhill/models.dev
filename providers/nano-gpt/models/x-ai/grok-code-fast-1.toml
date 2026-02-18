@@ -1,6 +1,7 @@
 name = "Grok Code Fast 1"
-release_date = "2024-01-01"
-last_updated = "2024-01-01"
+family = "x-ai"
+release_date = "2025-08-28"
+last_updated = "2025-08-28"
 attachment = false
 reasoning = true
 tool_call = false

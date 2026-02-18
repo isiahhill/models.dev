@@ -1,4 +1,5 @@
 name = "DeepSeek V3.1"
+family = "deepseek-ai"
 release_date = "2025-07-26"
 last_updated = "2025-07-26"
 attachment = true

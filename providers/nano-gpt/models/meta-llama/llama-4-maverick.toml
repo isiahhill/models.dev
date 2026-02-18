@@ -1,4 +1,5 @@
 name = "Llama 4 Maverick"
+family = "meta-llama"
 release_date = "2025-09-05"
 last_updated = "2025-09-05"
 attachment = true
@@ -8,7 +9,7 @@ structured_output = true
 open_weights = false
 
 [cost]
-input = 0.18
+input = 0.18000000000000002
 output = 0.8
 
 [limit]

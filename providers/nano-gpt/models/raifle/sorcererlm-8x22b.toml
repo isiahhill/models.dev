@@ -1,6 +1,7 @@
 name = "SorcererLM 8x22B"
-release_date = "2024-01-01"
-last_updated = "2024-01-01"
+family = "raifle"
+release_date = "2025-01-01"
+last_updated = "2025-01-01"
 attachment = true
 reasoning = false
 tool_call = false

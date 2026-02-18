@@ -1,6 +1,7 @@
 name = "Olmo 3 32B Think"
-release_date = "2024-01-01"
-last_updated = "2024-01-01"
+family = "allenai"
+release_date = "2025-11-01"
+last_updated = "2025-11-01"
 attachment = false
 reasoning = true
 tool_call = false
@@ -9,7 +10,7 @@ open_weights = false
 
 [cost]
 input = 0.3
-output = 0.45
+output = 0.44999999999999996
 
 [limit]
 context = 128_000

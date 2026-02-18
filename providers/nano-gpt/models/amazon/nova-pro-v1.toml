@@ -1,6 +1,7 @@
 name = "Amazon Nova Pro 1.0"
-release_date = "2024-01-01"
-last_updated = "2024-01-01"
+family = "amazon"
+release_date = "2024-12-03"
+last_updated = "2024-12-03"
 attachment = false
 reasoning = false
 tool_call = false
@@ -8,8 +9,8 @@ structured_output = false
 open_weights = false
 
 [cost]
-input = 0.799
-output = 3.196
+input = 0.7989999999999999
+output = 3.1959999999999997
 
 [limit]
 context = 300_000

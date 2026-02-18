@@ -1,4 +1,5 @@
 name = "Llama 3.3 70B Instruct abliterated"
+family = "huihui-ai"
 release_date = "2025-08-08"
 last_updated = "2025-08-08"
 attachment = false

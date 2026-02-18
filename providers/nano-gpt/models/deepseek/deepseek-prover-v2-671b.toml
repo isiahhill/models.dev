@@ -1,6 +1,7 @@
 name = "DeepSeek Prover v2 671B"
-release_date = "2024-01-01"
-last_updated = "2024-01-01"
+family = "deepseek"
+release_date = "2025-04-30"
+last_updated = "2025-04-30"
 attachment = false
 reasoning = false
 tool_call = false

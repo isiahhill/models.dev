@@ -1,6 +1,7 @@
 name = "Nvidia Nemotron Nano 9B v2"
-release_date = "2024-01-01"
-last_updated = "2024-01-01"
+family = "nvidia"
+release_date = "2025-08-18"
+last_updated = "2025-08-18"
 attachment = false
 reasoning = false
 tool_call = false

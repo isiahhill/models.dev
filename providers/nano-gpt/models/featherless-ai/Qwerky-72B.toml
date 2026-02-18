@@ -1,6 +1,7 @@
 name = "Qwerky 72B"
-release_date = "2024-01-01"
-last_updated = "2024-01-01"
+family = "featherless-ai"
+release_date = "2025-03-20"
+last_updated = "2025-03-20"
 attachment = false
 reasoning = false
 tool_call = false

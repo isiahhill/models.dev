@@ -1,4 +1,5 @@
 name = "Llama 3.2 Medium"
+family = "meta-llama"
 release_date = "2025-09-25"
 last_updated = "2025-09-25"
 attachment = false
@@ -8,8 +9,8 @@ structured_output = false
 open_weights = false
 
 [cost]
-input = 0.901
-output = 0.901
+input = 0.9009999999999999
+output = 0.9009999999999999
 
 [limit]
 context = 131_072

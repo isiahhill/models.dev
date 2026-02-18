@@ -1,4 +1,5 @@
 name = "Grayline Qwen3 8B"
+family = "soob3123"
 release_date = "2025-09-25"
 last_updated = "2025-09-25"
 attachment = false

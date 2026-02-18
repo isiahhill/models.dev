@@ -1,6 +1,7 @@
 name = "TNG R1T Chimera"
-release_date = "2024-01-01"
-last_updated = "2024-01-01"
+family = "tngtech"
+release_date = "2025-11-26"
+last_updated = "2025-11-26"
 attachment = false
 reasoning = false
 tool_call = false

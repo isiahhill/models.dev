@@ -1,4 +1,5 @@
 name = "Qwen 2.5 32B Abliterated"
+family = "huihui-ai"
 release_date = "2025-01-06"
 last_updated = "2025-01-06"
 attachment = false

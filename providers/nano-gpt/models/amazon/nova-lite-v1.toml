@@ -1,6 +1,7 @@
 name = "Amazon Nova Lite 1.0"
-release_date = "2024-01-01"
-last_updated = "2024-01-01"
+family = "amazon"
+release_date = "2024-12-03"
+last_updated = "2024-12-03"
 attachment = false
 reasoning = false
 tool_call = false

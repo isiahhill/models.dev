@@ -1,6 +1,7 @@
 name = "Amazon Nova 2 Lite"
-release_date = "2024-01-01"
-last_updated = "2024-01-01"
+family = "amazon"
+release_date = "2024-12-03"
+last_updated = "2024-12-03"
 attachment = false
 reasoning = false
 tool_call = false
@@ -8,7 +9,7 @@ structured_output = false
 open_weights = false
 
 [cost]
-input = 0.51
+input = 0.5099999999999999
 output = 4.25
 
 [limit]
