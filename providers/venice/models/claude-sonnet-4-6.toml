@@ -1,25 +1,25 @@
-name = "Claude Opus 4.6"
-family = "claude-opus"
+name = "Claude Sonnet 4.6"
+family = "claude-sonnet"
 attachment = true
 reasoning = true
 tool_call = true
 structured_output = true
 temperature = true
-release_date = "2026-02-05"
+release_date = "2026-01-15"
 last_updated = "2026-02-18"
 open_weights = false
 
 [cost]
-input = 6
-output = 30
-cache_read = 0.6
-cache_write = 7.5
+input = 3.75
+output = 18.75
+cache_read = 0.375
+cache_write = 4.69
 
 [cost.context_over_200k]
-input = 11
-output = 41.25
-cache_read = 1.1
-cache_write = 13.75
+input = 6
+output = 25
+cache_read = 0.6
+cache_write = 7.5
 
 [limit]
 context = 1_000_000
