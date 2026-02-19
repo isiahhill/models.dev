@@ -9,7 +9,7 @@ last_updated = "2026-02-19"
 open_weights = false
 
 [cost]
-input = 0.39999999999999997
+input = 0.4
 output = 2.4
 cache_read = 0.04
 cache_write = 0.5
