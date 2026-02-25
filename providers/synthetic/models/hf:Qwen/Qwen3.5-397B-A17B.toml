@@ -23,7 +23,5 @@ context = 262_144
 output = 65_536
 
 [modalities]
-# https://api.synthetic.new/openai/v1/models reports image support
-# even though model itself does not natively support images (rerouted?)
 input = ["text", "image"]
 output = ["text"]
