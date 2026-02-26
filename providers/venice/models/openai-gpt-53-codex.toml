@@ -16,7 +16,7 @@ cache_read = 0.219
 
 [limit]
 context = 400_000
-output = 100_000
+output = 131_072
 
 [modalities]
 input = ["text", "image"]
