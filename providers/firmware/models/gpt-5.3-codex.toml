@@ -1,19 +1,18 @@
-name = "GPT-5"
+name = "GPT-5.3 Codex"
 family = "gpt"
-release_date = "2025-08-07"
-last_updated = "2025-08-07"
+release_date = "2026-02-15"
+last_updated = "2026-02-15"
 attachment = true
 reasoning = true
 temperature = false
-knowledge = "2024-09-30"
+knowledge = "2026-01-31"
 tool_call = true
-structured_output = true
 open_weights = false
 
 [cost]
-input = 1.25
-output = 10
-cache_read = 0.13
+input = 1.75
+output = 14
+cache_read = 0.175
 
 [limit]
 context = 400_000
