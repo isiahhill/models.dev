@@ -1,4 +1,5 @@
-name = "Claude Haiku 4.5"
+name = "Claude-Haiku-4.5"
+family = "claude-haiku"
 release_date = "2025-10-15"
 last_updated = "2025-10-15"
 attachment = true
@@ -9,7 +10,7 @@ tool_call = true
 
 [cost]
 input = 0.85
-output = 4.2
+output = 4.3
 cache_read = 0.085
 cache_write = 1.1
 
@@ -18,5 +19,5 @@ context = 192_000
 output = 64_000
 
 [modalities]
-input = ["text", "image"]
+input = ["text", "image", "pdf"]
 output = ["text"]

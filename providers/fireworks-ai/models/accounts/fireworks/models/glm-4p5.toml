@@ -1,4 +1,5 @@
 name = "GLM 4.5"
+family = "glm"
 release_date = "2025-07-29"
 last_updated = "2025-07-29"
 attachment = false
@@ -19,3 +20,6 @@ output = 131_072
 [modalities]
 input = ["text"]
 output = ["text"]
+
+[interleaved]
+field = "reasoning_content"

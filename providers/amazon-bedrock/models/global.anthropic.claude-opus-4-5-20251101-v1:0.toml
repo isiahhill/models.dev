@@ -1,4 +1,5 @@
 name = "Claude Opus 4.5 (Global)"
+family = "claude-opus"
 release_date = "2025-11-24"
 last_updated = "2025-08-01"
 attachment = true
@@ -11,13 +12,13 @@ open_weights = false
 [cost]
 input = 5.00
 output = 25.00
-cache_read = 1.50
-cache_write = 18.75
+cache_read = 0.50
+cache_write = 6.25
 
 [limit]
 context = 200_000
 output = 64_000
 
 [modalities]
-input = ["text", "image"]
+input = ["text", "image", "pdf"]
 output = ["text"]

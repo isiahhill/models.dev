@@ -11,6 +11,7 @@ export default {
   ): Promise<Response> {
     const url = new URL(request.url);
     const ip = request.headers.get("cf-connecting-ip") || "unknown";
+    const country = request.headers.get("cf-ipcountry") || "unknown";
     const agent = request.headers.get("user-agent") || "unknown";
     if (agent.includes("opencode") || agent.includes("bun")) {
       ctx.waitUntil(
@@ -26,11 +27,50 @@ export default {
             properties: {
               $process_person_profile: false,
               user_agent: agent,
+              country,
               path: url.pathname,
             },
           }),
         }),
       );
+    }
+
+    if (url.pathname === "/model-schema.json") {
+      const apiUrl = new URL(url);
+      apiUrl.pathname = "/_api.json";
+      const apiResponse = await env.ASSETS.fetch(
+        new Request(apiUrl.toString(), request),
+      );
+      const providers = (await apiResponse.json()) as Record<
+        string,
+        { models: Record<string, unknown> }
+      >;
+
+      const modelIds: string[] = [];
+      for (const [providerId, provider] of Object.entries(providers)) {
+        for (const modelId of Object.keys(provider.models)) {
+          modelIds.push(`${providerId}/${modelId}`);
+        }
+      }
+
+      const schema = {
+        $schema: "https://json-schema.org/draft/2020-12/schema",
+        $id: "https://models.dev/model-schema.json",
+        $defs: {
+          Model: {
+            type: "string",
+            enum: modelIds.sort(),
+            description: "AI model identifier in provider/model format",
+          },
+        },
+      };
+
+      return new Response(JSON.stringify(schema, null, 2), {
+        headers: {
+          "Content-Type": "application/json",
+          "Cache-Control": "public, max-age=3600",
+        },
+      });
     }
 
     if (url.pathname === "/api.json") {

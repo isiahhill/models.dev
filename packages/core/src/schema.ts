@@ -1,5 +1,7 @@
 import { z } from "zod";
 
+import { ModelFamily } from "./family";
+
 const Cost = z.object({
   input: z.number().min(0, "Input price cannot be negative"),
   output: z.number().min(0, "Output price cannot be negative"),
@@ -25,9 +27,20 @@ export const Model = z
   .object({
     id: z.string(),
     name: z.string().min(1, "Model name cannot be empty"),
+    family: ModelFamily.optional(),
     attachment: z.boolean(),
     reasoning: z.boolean(),
     tool_call: z.boolean(),
+    interleaved: z
+      .union([
+        z.literal(true),
+        z
+          .object({
+            field: z.enum(["reasoning_content", "reasoning_details"]),
+          })
+          .strict(),
+      ])
+      .optional(),
     structured_output: z.boolean().optional(),
     temperature: z.boolean().optional(),
     knowledge: z
@@ -71,7 +84,7 @@ export const Model = z
     {
       message: "Cannot set cost.reasoning when reasoning is false",
       path: ["cost", "reasoning"],
-    }
+    },
   );
 
 export type Model = z.infer<typeof Model>;
@@ -87,31 +100,41 @@ export const Provider = z
       .string()
       .min(
         1,
-        "Please provide a link to the provider documentation where models are listed"
+        "Please provide a link to the provider documentation where models are listed",
       ),
     models: z.record(Model),
   })
   .strict()
   .refine(
     (data) => {
+      const isOpenAI = data.npm === "@ai-sdk/openai";
       const isOpenAIcompatible = data.npm === "@ai-sdk/openai-compatible";
+      const isOpenrouter = data.npm === "@openrouter/ai-sdk-provider";
       const isAnthropic = data.npm === "@ai-sdk/anthropic";
       const hasApi = data.api !== undefined;
 
       return (
         // openai-compatible: must have api
         (isOpenAIcompatible && hasApi) ||
+        // openrouter: must have api
+        (isOpenrouter && hasApi) ||
         // anthropic: api optional (always allowed)
         isAnthropic ||
+        // openai: api optional (always allowed)
+        isOpenAI ||
         // all others: must NOT have api
-        (!isOpenAIcompatible && !isAnthropic && !hasApi)
+        (!isOpenAI &&
+          !isOpenAIcompatible &&
+          !isOpenrouter &&
+          !isAnthropic &&
+          !hasApi)
       );
     },
     {
       message:
-        "'api' is required for openai-compatible, optional for anthropic, forbidden otherwise",
+        "'api' is required for openai-compatible and openrouter, optional for anthropic and openai, forbidden otherwise",
       path: ["api"],
-    }
+    },
   );
 
 export type Provider = z.infer<typeof Provider>;

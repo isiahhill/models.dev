@@ -1,4 +1,5 @@
 name = "DeepSeek V3"
+family = "deepseek"
 release_date = "2025-01-20"
 last_updated = "2025-05-29"
 attachment = false
@@ -14,7 +15,7 @@ output = 1.25
 
 [limit]
 context = 131_072
-output = 12_288
+output = 131_072
 
 [modalities]
 input = ["text"]

@@ -1,6 +1,7 @@
 name = "Claude Opus 4.5"
-release_date = "2025-11-01"
-last_updated = "2025-11-01"
+family = "claude-opus"
+release_date = "2025-11-24"
+last_updated = "2025-11-24"
 attachment = true
 reasoning = true
 temperature = true
@@ -19,7 +20,7 @@ context = 200_000
 output = 64_000
 
 [modalities]
-input = ["text", "image"]
+input = ["text", "image", "pdf"]
 output = ["text"]
 
 [provider]

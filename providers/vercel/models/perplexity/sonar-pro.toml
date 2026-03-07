@@ -1,11 +1,12 @@
 name = "Sonar Pro"
+family = "sonar-pro"
 release_date = "2025-02-19"
 last_updated = "2025-02-19"
-attachment = false
+attachment = true
 reasoning = false
 temperature = true
 knowledge = "2025-09"
-tool_call = false
+tool_call = true
 open_weights = false
 
 [cost]

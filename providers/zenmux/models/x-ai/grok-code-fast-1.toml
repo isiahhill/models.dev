@@ -4,8 +4,8 @@ last_updated = "2025-08-26"
 attachment = false
 reasoning = true
 temperature = true
-knowledge = "2025-01-01"
 tool_call = true
+knowledge = "2025-01-01"
 open_weights = false
 
 [cost]
@@ -15,7 +15,7 @@ cache_read = 0.02
 
 [limit]
 context = 256_000
-output = 10_000
+output = 64_000
 
 [modalities]
 input = ["text"]

@@ -1,4 +1,5 @@
 name = "Gemini 2.5 Flash Preview 09-25"
+family = "gemini-flash"
 release_date = "2025-09-25"
 last_updated = "2025-09-25"
 attachment = true
@@ -11,7 +12,7 @@ open_weights = false
 [cost]
 input = 0.30
 output = 2.50
-cache_read = 0.075
+cache_read = 0.03
 cache_write = 0.383
 
 [limit]

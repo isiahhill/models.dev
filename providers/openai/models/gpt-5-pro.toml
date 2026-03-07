@@ -1,4 +1,5 @@
 name = "GPT-5 Pro"
+family = "gpt-pro"
 release_date = "2025-10-06"
 last_updated = "2025-10-06"
 attachment = true
@@ -15,6 +16,7 @@ output = 120.00
 
 [limit]
 context = 400_000
+input = 272_000
 output = 272_000
 
 [modalities]

@@ -1,4 +1,5 @@
 name = "DeepSeek R1 Distill Llama 70B"
+family = "deepseek-thinking"
 attachment = false
 reasoning = true
 tool_call = true

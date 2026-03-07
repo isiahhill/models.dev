@@ -1,4 +1,5 @@
 name = "GPT-5.1 Codex"
+family = "gpt-codex"
 release_date = "2025-11-13"
 last_updated = "2025-11-13"
 attachment = true
@@ -16,8 +17,9 @@ cache_read = 0.125
 
 [limit]
 context = 400_000
+input = 272_000
 output = 128_000
 
 [modalities]
 input = ["text", "image"]
-output = ["text", "image"]
+output = ["text"]

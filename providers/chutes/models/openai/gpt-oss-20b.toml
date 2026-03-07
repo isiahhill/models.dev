@@ -1,16 +1,17 @@
-name = "Gpt Oss 20b"
-release_date = "2025-11-08"
-last_updated = "2025-11-08"
+name = "gpt oss 20b"
+family = "gpt-oss"
+release_date = "2025-12-29"
+last_updated = "2026-01-10"
 attachment = false
 reasoning = true
 temperature = true
-
 tool_call = true
+structured_output = true
 open_weights = true
 
 [cost]
-input = 0.00
-output = 0.00
+input = 0.02
+output = 0.10
 
 [limit]
 context = 131_072
@@ -19,3 +20,6 @@ output = 131_072
 [modalities]
 input = ["text"]
 output = ["text"]
+
+[interleaved]
+field = "reasoning_content"

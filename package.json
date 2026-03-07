@@ -15,10 +15,13 @@
     }
   },
   "scripts": {
-    "validate": "bun ./packages/core/script/validate.ts"
+    "validate": "bun ./packages/core/script/validate.ts",
+    "helicone:generate": "bun ./packages/core/script/generate-helicone.ts",
+    "venice:generate": "bun ./packages/core/script/generate-venice.ts",
+    "vercel:generate": "bun ./packages/core/script/generate-vercel.ts"
   },
   "dependencies": {
     "@cloudflare/workers-types": "^4.20250801.0",
-    "sst": "3.17.5"
+    "sst": "3.17.23"
   }
 }
