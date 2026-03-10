@@ -22,3 +22,6 @@ output = 262_144
 [modalities]
 input = ["text", "image"]
 output = ["text"]
+
+[provider]
+shape = "completions"
