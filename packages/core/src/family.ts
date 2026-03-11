@@ -96,6 +96,7 @@ export const ModelFamilyValues = [
 
   // NVIDIA Nemotron
   "nemotron",
+  "nemotron-free",
 
   // AWS Titan
   "titan",
