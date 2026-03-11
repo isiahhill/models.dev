@@ -15,7 +15,6 @@ output = 10
 
 [limit]
 context = 256000
-input = 256_000
 output = 8000
 
 [modalities]

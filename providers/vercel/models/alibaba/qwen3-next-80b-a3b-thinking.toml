@@ -15,7 +15,6 @@ output = 1.5
 
 [limit]
 context = 131_072
-input = 128_000
 output = 65536
 
 [modalities]

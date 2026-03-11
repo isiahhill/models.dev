@@ -15,7 +15,6 @@ output = 5.0
 
 [limit]
 context = 1_000_000
-input = 1_000_000
 output = 1_000_000
 
 [modalities]

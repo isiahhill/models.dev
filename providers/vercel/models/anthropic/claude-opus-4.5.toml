@@ -19,7 +19,6 @@ cache_write = 18.75
 
 [limit]
 context = 200_000
-input = 200_000
 output = 64_000
 
 [modalities]

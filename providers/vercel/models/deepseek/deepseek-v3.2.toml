@@ -16,7 +16,6 @@ cache_read = 0.22
 
 [limit]
 context = 163842
-input = 163_840
 output = 8000
 
 [modalities]
