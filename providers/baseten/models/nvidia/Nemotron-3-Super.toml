@@ -15,7 +15,6 @@ field = "reasoning_content"
 [cost]
 input = 0.30
 output = 0.75
-cache_read = 0.03
 
 [limit]
 context = 202_800
