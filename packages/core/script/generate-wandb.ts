@@ -145,6 +145,10 @@ function formatNumber(n: number): string {
   return n.toString();
 }
 
+function formatDecimal(n: number): string {
+  return Number(n.toFixed(6)).toString();
+}
+
 function priceToPerMillion(value: string): number {
   return Number((parseFloat(value) * 1_000_000).toFixed(6));
 }
@@ -336,13 +340,13 @@ function formatToml(model: MergedModel): string {
   if (model.cost) {
     lines.push("");
     lines.push("[cost]");
-    lines.push(`input = ${model.cost.input}`);
-    lines.push(`output = ${model.cost.output}`);
+    lines.push(`input = ${formatDecimal(model.cost.input)}`);
+    lines.push(`output = ${formatDecimal(model.cost.output)}`);
     if (model.cost.cache_read !== undefined) {
-      lines.push(`cache_read = ${model.cost.cache_read}`);
+      lines.push(`cache_read = ${formatDecimal(model.cost.cache_read)}`);
     }
     if (model.cost.cache_write !== undefined) {
-      lines.push(`cache_write = ${model.cost.cache_write}`);
+      lines.push(`cache_write = ${formatDecimal(model.cost.cache_write)}`);
     }
   }
 
