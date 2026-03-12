@@ -11,7 +11,7 @@ open_weights = true
 
 [cost]
 input = 1
-output = 3.1999999999999997
+output = 3.2
 
 [limit]
 context = 200_000
