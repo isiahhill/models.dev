@@ -10,12 +10,12 @@ release_date = "2024-07-18"
 last_updated = "2024-07-18"
 
 [cost]
-input = 0.20
-output = 0.20
+input = 0.55
+output = 2.75
 
 [limit]
-context = 58_904
-output = 4_096
+context = 261_000
+output = 32_768
 
 [modalities]
 input = ["text"]

@@ -1,7 +1,7 @@
-name = "DeepSeek R1 Distill Llama 70B"
-family = "deepseek-thinking"
+name = "DeepSeek V3.2"
+family = "deepseek"
 attachment = false
-reasoning = true
+reasoning = false
 tool_call = true
 temperature = true
 open_weights = true
@@ -10,12 +10,12 @@ release_date = "2025-01-20"
 last_updated = "2025-01-20"
 
 [cost]
-input = 0.20
-output = 0.20
+input = 0.55
+output = 2.75
 
 [limit]
-context = 121_808
-output = 8_192
+context = 163_000
+output = 4_096
 
 [modalities]
 input = ["text"]
