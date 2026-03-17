@@ -1,7 +1,7 @@
-name = "BGE Multilingual Gemma2"
-family = "gemma"
-release_date = "2024-07-26"
-last_updated = "2025-06-15"
+name = "Qwen3 Embedding 8B"
+family = "qwen"
+release_date = "2025-25-11"
+last_updated = "2026-03-17"
 attachment = false
 reasoning = false
 temperature = false
@@ -13,8 +13,8 @@ input = 0.10
 output = 0.00
 
 [limit]
-context = 8_191
-output = 3_072
+context = 32_768
+output = 4_096
 
 [modalities]
 input = ["text"]
