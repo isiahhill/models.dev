@@ -194,6 +194,9 @@ export const ModelFamilyValues = [
 
   // Mimo
   "mimo",
+  "mimo-pro-free",
+  "mimo-omni-free",
+  "mimo-flash-free",
 
   // Clarifai
   "mm-poly",
@@ -284,9 +287,6 @@ export const ModelFamilyValues = [
 
   // Parakeet
   "parakeet",
-
-  // MiMo
-  "mimo-flash-free",
 
   // NeMo
   "nemoretriever",
